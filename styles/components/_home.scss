@@ -1,0 +1,32 @@
+@use "../abstracts" as style;
+
+.navContainer {
+  background-color: style.$bgLight;
+  font-size: style.$bodyMain;
+  nav {
+    ul {
+      margin: 0px;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      li {
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: style.$secondaryColor;
+          margin: 0px 30px;
+        }
+      }
+      .contact {
+        margin-left: auto;
+        border: 1px solid style.$bgDark;
+        background-color: style.$bgDark;
+        padding: 5px;
+        border-radius: 20px;
+        a {
+          color: style.$primaryColor;
+        }
+      }
+    }
+  }
+}
