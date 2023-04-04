@@ -1,8 +1,13 @@
 @use "components/home";
 @use "components/navBar";
+@use "components/about";
 @use "components/switcher";
 
-body{
-    margin: 0px;
-    font-family: 'Inter';
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  font-family: "Inter";
 }

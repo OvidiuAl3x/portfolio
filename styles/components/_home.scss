@@ -1,7 +1,7 @@
 @use "../abstracts" as style;
 
 .homeContainer {
-  height: calc(100vh - 65px);
+  height: 100vh;
   background-color: style.$bgDark;
   display: flex;
   justify-content: space-evenly;
@@ -10,7 +10,7 @@
   .leftSide {
     text-align: center;
     font-weight: 600;
-    font-size: 28px;
+    font-size: style.$fontHeadingH1;
     h1,
     h4 {
       margin: 0px;
@@ -26,7 +26,7 @@
       background-color: var(--skin-color);
       padding: 15px;
       border-radius: 20px;
-      font-size: 18px;
+      font-size: style.$fontMedium;
       text-decoration: none;
       color: style.$bgDark;
 
@@ -59,7 +59,7 @@
       background-color: style.$bgDark;
       padding: 15px 5px;
       border-radius: 20px;
-      font-size: 18px;
+      font-size: style.$fontMedium;
       text-decoration: none;
       color: var(--skin-color);
 

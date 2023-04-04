@@ -1,7 +1,6 @@
 @use "../abstracts" as style;
 
 .style-switcher {
-  cursor: pointer;
   position: fixed;
   right: 0;
   top: 100px;
@@ -18,7 +17,7 @@
     height: 40px;
     width: 40px;
     text-align: center;
-    font-size: 20px;
+    font-size: style.$fontBodyMain;
     background: style.$bgDark;
     color: var(--skin-color);
     right: 100%;
@@ -37,8 +36,7 @@
   h4 {
     margin: 0 0 10px;
     color: var(--skin-color);
-    font-size: 16px;
-    font-weight: 600;
+    font-size: style.$fontMedium;
     text-transform: capitalize;
   }
   .colors {
