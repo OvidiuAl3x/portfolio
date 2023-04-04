@@ -1,7 +1,7 @@
 @use "../abstracts" as style;
 
 .navContainer {
-  background-color: style.$bgLight;
+  background-color: var(--skin-color);
   font-size: style.$bodyMain;
   nav {
     ul {
@@ -43,9 +43,9 @@
         padding: 5px;
         border-radius: 20px;
         a {
-          color: style.$bgLight;
+          color: var(--skin-color);
           &:before {
-            background-color: style.$bgLight;
+            background-color: var(--skin-color);
           }
         }
       }
