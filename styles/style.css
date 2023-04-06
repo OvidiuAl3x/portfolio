@@ -71,6 +71,7 @@
   position: fixed;
   width: 100%;
   border-bottom: 1px solid #3a3a3a;
+  z-index: 1001;
 }
 .navContainer nav ul {
   margin: 0px;
@@ -123,9 +124,9 @@
   display: flex;
   background-color: var(--skin-color);
   justify-content: space-between;
+  height: 100vh;
 }
 .aboutContainer .leftSide {
-  height: 100vh;
   width: 35%;
   background-color: #3a3a3a;
   border-radius: 0px 360px;
@@ -147,7 +148,6 @@
   word-spacing: 2px;
 }
 .aboutContainer .rigthSide {
-  height: 100vh;
   width: 65%;
   background-color: var(--skin-color);
   display: flex;
@@ -180,6 +180,27 @@
 }
 .aboutContainer .rigthSide .imgContainer div p {
   color: #3a3a3a;
+}
+
+.portfolioContainer {
+  height: 100vh;
+  background: #3a3a3a;
+}
+.portfolioContainer .curve {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  height: 100vh;
+}
+.portfolioContainer .curve div {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-color: var(--skin-color);
+  -webkit-clip-path: polygon(100% 0, 69% 53%, 25% 68%, 0 100%, 100% 100%);
+          clip-path: polygon(100% 0, 69% 53%, 25% 68%, 0 100%, 100% 100%);
 }
 
 .style-switcher {
@@ -242,7 +263,7 @@
   cursor: pointer;
 }
 .style-switcher .color-3 {
-  background: #ffc700;
+  background: #f7d14a;
   cursor: pointer;
 }
 .style-switcher .color-4 {

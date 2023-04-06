@@ -1,0 +1,24 @@
+@use "../abstracts/" as style;
+
+// clip-path: polygon(100% 0, 0 0, 25% 32%, 69% 53%, 100% 100%);
+// pt contact
+
+.portfolioContainer {
+  height: 100vh;
+  background: style.$bgDark;
+  .curve {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    height: 100vh;
+    div {
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-color: var(--skin-color);
+      clip-path: polygon(100% 0, 69% 53%, 25% 68%, 0 100%, 100% 100%);
+    }
+  }
+}

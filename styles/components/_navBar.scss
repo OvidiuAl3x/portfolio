@@ -6,6 +6,7 @@
   position: fixed;
   width: 100%;
   border-bottom: 1px solid style.$bgDark;
+  z-index: 1001;
   nav {
     ul {
       margin: 0px;
