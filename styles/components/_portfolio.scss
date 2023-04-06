@@ -6,14 +6,36 @@
 .portfolioContainer {
   height: 100vh;
   background: style.$bgDark;
+
+  .portfolio {
+    width: 100%;
+    color: white;
+    z-index: 2;
+    h1 {
+      text-align: center;
+      padding-top: 50px;
+      margin: 0px;
+    }
+    .category {
+      display: flex;
+      margin-top: 50px;
+      margin-left: 15%;
+
+      p {
+        z-index: 1;
+        margin: 15px;
+        cursor: pointer;
+      }
+    }
+  }
+
   .curve {
     width: 100%;
     position: absolute;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     height: 100vh;
     div {
-      z-index: 2;
       width: 100%;
       height: 100%;
       background-size: cover;
