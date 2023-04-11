@@ -6,7 +6,7 @@
   position: fixed;
   width: 100%;
   border-bottom: 1px solid style.$bgDark;
-  z-index: 1001;
+  z-index: 1;
   nav {
     ul {
       margin: 0px;
@@ -22,21 +22,10 @@
           color: style.$secondaryColor;
           margin: 0px 30px;
           &:before {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: -3px;
-            width: 100%;
-            height: 3px;
-            background-color: style.$bgDark;
-            border-radius: 4px;
-            scale: 0;
-            transform-origin: right;
-            transition: scale 0.25s;
+            @include style.buttonBeforeHover;
           }
           &:hover:before {
-            scale: 1;
-            transform-origin: left;
+            @include style.buttonHover;
           }
         }
       }

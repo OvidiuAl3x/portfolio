@@ -14,11 +14,11 @@
     h1,
     h4 {
       margin: 0px;
-      color: white;
+      color: style.$primaryColor;
     }
     .stroke {
       -webkit-text-stroke: 0.2px var(--skin-color);
-      color: #3a3a3a;
+      color: style.$secondaryColor;
     }
 
     a {
@@ -28,7 +28,7 @@
       border-radius: 20px;
       font-size: style.$fontMedium;
       text-decoration: none;
-      color: style.$bgDark;
+      color: style.$secondaryColor;
 
       transition: all 0.3s ease-in-out;
       &:hover {

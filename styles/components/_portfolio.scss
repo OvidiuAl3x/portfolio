@@ -1,94 +1,115 @@
 @use "../abstracts/" as style;
 
-.portfolioContainer {
+.portfolio {
+  width: 100%;
+  color: style.$primaryColor;
+  z-index: 2;
   min-height: 100vh;
-  background-image: linear-gradient(
-    to bottom right,
-    #3b3b3b 1%,
-    #3e4241 33%,
-    #404a49 41%,
-    #435150 46%,
-    #485b5a 48%,
-    #4b6362 50%,
-    #4c6b6a 51%,
-    #4e7371 51%,
-    #517b79 51%,
-    #548784 51%,
-    #568f8d 50%,
-    var(--skin-color) 50%,
-    var(--skin-color) 49%,
-    var(--skin-color) 49%,
-    var(--skin-color) 49%,
-    var(--skin-color) 49%,
-    var(--skin-color) 50%,
-    var(--skin-color) 52%,
-    var(--skin-color) 54%,
-    var(--skin-color) 59%,
-    var(--skin-color) 67%,
-    var(--skin-color) 99%
-  );
+  @include style.bgGradient(bottom, right);
+  h1 {
+    text-align: center;
+    padding-top: 80px;
+    margin: 0px;
+  }
+  .category {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 15%;
 
-  .portfolio {
-    width: 100%;
-    color: white;
-    z-index: 2;
-    h1 {
-      text-align: center;
-      padding-top: 80px;
-      margin: 0px;
-    }
-    .category {
-      display: flex;
-      margin-top: 50px;
-      margin-left: 15%;
-
-      p {
-        z-index: 1;
-        margin: 15px;
-        cursor: pointer;
-      }
-    }
-    .imagesContainer {
+    p {
       position: relative;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      margin: auto;
-      div {
-        span {
-          position: absolute;
-          transform: translate(40px, -17em);
-          background-color: style.$bgDark;
-          color: var(--skin-color);
-          padding: 5px 15px;
-          border-radius: 20px;
-        }
+      z-index: 1;
+      margin: 15px;
+      cursor: pointer;
+      &:before {
+        @include style.buttonBeforeHover;
+        background-color: var(--skin-color);
       }
-      img {
-        max-width: 450px;
-        min-height: 250px;
-        max-height: 250px;
-        margin: 20px;
-        border: 6px solid var(--skin-color);
-        border-radius: 10px;
-        box-shadow: 0 0 20px rgb(0, 0, 0);
+      &:hover:before {
+        @include style.buttonHover;
       }
     }
   }
-
-  .curve {
-    width: 100%;
-    position: absolute;
+  .imagesContainer {
+    position: relative;
     display: flex;
-    justify-content: flex-end;
-    height: 153.5vh;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
 
     div {
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-      background-color: var(--skin-color);
-      clip-path: polygon(100% 0, 69% 53%, 25% 68%, 0 100%, 100% 100%);
+      span {
+        font-size: style.$fontSmall;
+        position: absolute;
+        transform: translate(35px, -16em);
+        background-color: style.$bgDark;
+        color: var(--skin-color);
+        padding: 5px 15px;
+        border-radius: 20px;
+      }
+    }
+    img {
+      max-width: 350px;
+      min-height: 200px;
+      max-height: 200px;
+      margin: 20px;
+      border: 6px solid var(--skin-color);
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgb(0, 0, 0);
+      cursor: pointer;
+    }
+  }
+  .popUpContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    &:target {
+      visibility: visible;
+      opacity: 1;
+    }
+    .secondContainer {
+      @include style.bgGradient(top, left);
+      margin: auto;
+      display: flex;
+      border-radius: 360px 0px 0px 0px;
+      width: 150vh;
+      padding: 50px 0px 50px 80px;
+      align-items: center;
+      .leftSide {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        h1 {
+          margin-bottom: 50px;
+          padding-top: 0px;
+          color: style.$secondaryColor;
+        }
+      }
+      .rigthSide {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        background-color: #3b3b3b;
+        margin: 50px;
+        width: 30%;
+      }
+      .close {
+        position: relative;
+        transform: translate(45em, -10em);
+        font-size: 30px;
+        color: var(--skin-color);
+        text-decoration: none;
+        font-weight: 600;
+      }
     }
   }
 }

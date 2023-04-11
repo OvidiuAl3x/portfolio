@@ -1,0 +1,48 @@
+@use "../abstracts/colors";
+
+@mixin buttonBeforeHover {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 3px;
+  background-color: colors.$bgDark;
+  border-radius: 4px;
+  scale: 0;
+  transform-origin: right;
+  transition: scale 0.25s;
+}
+
+@mixin buttonHover {
+  scale: 1;
+  transform-origin: left;
+}
+
+@mixin bgGradient($a,$b){
+  background-image: linear-gradient(
+    to $a $b,
+    #3b3b3b 1%,
+    #3e4241 33%,
+    #404a49 41%,
+    #435150 46%,
+    #485b5a 48%,
+    #4b6362 50%,
+    #4c6b6a 51%,
+    #4e7371 51%,
+    #517b79 51%,
+    #548784 51%,
+    #568f8d 50%,
+    var(--skin-color) 50%,
+    var(--skin-color) 49%,
+    var(--skin-color) 49%,
+    var(--skin-color) 49%,
+    var(--skin-color) 49%,
+    var(--skin-color) 50%,
+    var(--skin-color) 52%,
+    var(--skin-color) 54%,
+    var(--skin-color) 59%,
+    var(--skin-color) 67%,
+    var(--skin-color) 99%
+  );
+}

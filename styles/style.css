@@ -13,7 +13,7 @@
 .homeContainer .leftSide h1,
 .homeContainer .leftSide h4 {
   margin: 0px;
-  color: white;
+  color: #e9e9e9;
 }
 .homeContainer .leftSide .stroke {
   -webkit-text-stroke: 0.2px var(--skin-color);
@@ -71,7 +71,7 @@
   position: fixed;
   width: 100%;
   border-bottom: 1px solid #3a3a3a;
-  z-index: 1001;
+  z-index: 1;
 }
 .navContainer nav ul {
   margin: 0px;
@@ -141,7 +141,7 @@
   margin-bottom: 2em;
 }
 .aboutContainer .leftSide p {
-  color: white;
+  color: #e9e9e9;
   margin: 0px 2em;
   font-size: 20px;
   line-height: 50px;
@@ -182,68 +182,125 @@
   color: #3a3a3a;
 }
 
-.portfolioContainer {
+.portfolio {
+  width: 100%;
+  color: #e9e9e9;
+  z-index: 2;
   min-height: 100vh;
   background-image: linear-gradient(to bottom right, #3b3b3b 1%, #3e4241 33%, #404a49 41%, #435150 46%, #485b5a 48%, #4b6362 50%, #4c6b6a 51%, #4e7371 51%, #517b79 51%, #548784 51%, #568f8d 50%, var(--skin-color) 50%, var(--skin-color) 49%, var(--skin-color) 49%, var(--skin-color) 49%, var(--skin-color) 49%, var(--skin-color) 50%, var(--skin-color) 52%, var(--skin-color) 54%, var(--skin-color) 59%, var(--skin-color) 67%, var(--skin-color) 99%);
 }
-.portfolioContainer .portfolio {
-  width: 100%;
-  color: white;
-  z-index: 2;
-}
-.portfolioContainer .portfolio h1 {
+.portfolio h1 {
   text-align: center;
   padding-top: 80px;
   margin: 0px;
 }
-.portfolioContainer .portfolio .category {
+.portfolio .category {
   display: flex;
   margin-top: 50px;
   margin-left: 15%;
 }
-.portfolioContainer .portfolio .category p {
+.portfolio .category p {
+  position: relative;
   z-index: 1;
   margin: 15px;
   cursor: pointer;
 }
-.portfolioContainer .portfolio .imagesContainer {
+.portfolio .category p:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 3px;
+  background-color: #3a3a3a;
+  border-radius: 4px;
+  scale: 0;
+  transform-origin: right;
+  transition: scale 0.25s;
+  background-color: var(--skin-color);
+}
+.portfolio .category p:hover:before {
+  scale: 1;
+  transform-origin: left;
+}
+.portfolio .imagesContainer {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: auto;
+  margin-top: 20px;
 }
-.portfolioContainer .portfolio .imagesContainer div span {
+.portfolio .imagesContainer div span {
+  font-size: 14px;
   position: absolute;
-  transform: translate(40px, -17em);
+  transform: translate(35px, -16em);
   background-color: #3a3a3a;
   color: var(--skin-color);
   padding: 5px 15px;
   border-radius: 20px;
 }
-.portfolioContainer .portfolio .imagesContainer img {
-  max-width: 450px;
-  min-height: 250px;
-  max-height: 250px;
+.portfolio .imagesContainer img {
+  max-width: 350px;
+  min-height: 200px;
+  max-height: 200px;
   margin: 20px;
   border: 6px solid var(--skin-color);
   border-radius: 10px;
   box-shadow: 0 0 20px rgb(0, 0, 0);
+  cursor: pointer;
 }
-.portfolioContainer .curve {
-  width: 100%;
-  position: absolute;
+.portfolio .popUpContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 2;
   display: flex;
-  justify-content: flex-end;
-  height: 153.5vh;
+  justify-content: center;
 }
-.portfolioContainer .curve div {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-color: var(--skin-color);
-  -webkit-clip-path: polygon(100% 0, 69% 53%, 25% 68%, 0 100%, 100% 100%);
-          clip-path: polygon(100% 0, 69% 53%, 25% 68%, 0 100%, 100% 100%);
+.portfolio .popUpContainer:target {
+  visibility: visible;
+  opacity: 1;
+}
+.portfolio .popUpContainer .secondContainer {
+  background-image: linear-gradient(to top left, #3b3b3b 1%, #3e4241 33%, #404a49 41%, #435150 46%, #485b5a 48%, #4b6362 50%, #4c6b6a 51%, #4e7371 51%, #517b79 51%, #548784 51%, #568f8d 50%, var(--skin-color) 50%, var(--skin-color) 49%, var(--skin-color) 49%, var(--skin-color) 49%, var(--skin-color) 49%, var(--skin-color) 50%, var(--skin-color) 52%, var(--skin-color) 54%, var(--skin-color) 59%, var(--skin-color) 67%, var(--skin-color) 99%);
+  margin: auto;
+  display: flex;
+  border-radius: 360px 0px 0px 0px;
+  width: 150vh;
+  padding: 50px 0px 50px 80px;
+  align-items: center;
+}
+.portfolio .popUpContainer .secondContainer .leftSide {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.portfolio .popUpContainer .secondContainer .leftSide h1 {
+  margin-bottom: 50px;
+  padding-top: 0px;
+  color: #3a3a3a;
+}
+.portfolio .popUpContainer .secondContainer .rigthSide {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  background-color: #3b3b3b;
+  margin: 50px;
+  width: 30%;
+}
+.portfolio .popUpContainer .secondContainer .close {
+  position: relative;
+  transform: translate(45em, -10em);
+  font-size: 30px;
+  color: var(--skin-color);
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .style-switcher {

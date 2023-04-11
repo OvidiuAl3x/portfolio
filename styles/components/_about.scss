@@ -20,7 +20,7 @@
       margin-bottom: 2em;
     }
     p {
-      color: white;
+      color: style.$primaryColor;
       margin: 0px 2em;
       font-size: style.$fontBodyMain;
       line-height: 50px;
@@ -36,7 +36,7 @@
     text-align: center;
     h1 {
       margin-bottom: 2em;
-      color: style.$bgDark;
+      color: style.$secondaryColor;
     }
     .imgContainer {
       width: 65%;
@@ -56,7 +56,7 @@
           height: 60px;
         }
         p {
-          color: style.$bgDark;
+          color: style.$secondaryColor;
         }
       }
     }
