@@ -143,10 +143,10 @@
         <p>SCSS</p>
       </div>
       <div class="imagesContainer">
-        <a href="#primul">
+        <div onclick="openDialog()">
           <img src="images/portofolio/bookReact.png" alt="Book App" />
           <div><span>Book App</span></div>
-        </a>
+        </div>
 
         <div>
           <img src="images/portofolio/cart.png" alt="Shopping Cart" />
@@ -191,9 +191,24 @@
 
       <div class="popUpContainer" id="primul">
         <div class="secondContainer">
-          <a class="close" href="#portfolio">&times;</a>
+          <p class="close" onclick="closeDialog()">&times;</p>
           <div class="leftSide">
             <h1>Project Name</h1>
+            <img src="images/portofolio/bookReact.png" alt="Book App" />
+          </div>
+          <div class="rigthSide">
+            <p>Aici descriere</p>
+            <button>View Code</button>
+            <button>View Live</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="popUpContainer" id="doi">
+        <div class="secondContainer">
+          <p class="close" onclick="closeDialog()">&times;</p>
+          <div class="leftSide">
+            <h1>Project doi</h1>
             <img src="images/portofolio/bookReact.png" alt="Book App" />
           </div>
           <div class="rigthSide">
@@ -220,5 +235,6 @@
       </div>
     </div>
     <script src="js/style-switcher.js"></script>
+    <script src="js/projects-dialog.js"></script>
   </body>
 </html>

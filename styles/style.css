@@ -255,17 +255,16 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.603);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
   transition: opacity 500ms;
   visibility: hidden;
-  opacity: 0;
   z-index: 2;
   display: flex;
   justify-content: center;
-}
-.portfolio .popUpContainer:target {
-  visibility: visible;
-  opacity: 1;
+  transform: scale(0.1);
+  transition: transform 0.4s, top 0.4s;
 }
 .portfolio .popUpContainer .secondContainer {
   background-image: linear-gradient(to top left, #3b3b3b 1%, #3e4241 33%, #404a49 41%, #435150 46%, #485b5a 48%, #4b6362 50%, #4c6b6a 51%, #4e7371 51%, #517b79 51%, #548784 51%, #568f8d 50%, var(--skin-color) 50%, var(--skin-color) 49%, var(--skin-color) 49%, var(--skin-color) 49%, var(--skin-color) 49%, var(--skin-color) 50%, var(--skin-color) 52%, var(--skin-color) 54%, var(--skin-color) 59%, var(--skin-color) 67%, var(--skin-color) 99%);
@@ -301,6 +300,11 @@
   color: var(--skin-color);
   text-decoration: none;
   font-weight: 600;
+  cursor: pointer;
+}
+.portfolio .open-dialog {
+  visibility: visible;
+  transform: scale(1);
 }
 
 .style-switcher {
@@ -387,4 +391,9 @@ body {
   margin: 0px;
   font-family: "Inter";
   letter-spacing: 1.2px;
+  overflow: auto;
+}
+
+.body-fix {
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */
