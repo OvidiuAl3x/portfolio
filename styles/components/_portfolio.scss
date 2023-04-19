@@ -11,12 +11,12 @@
     padding-top: 80px;
     margin: 0px;
   }
-  .category {
+  #myBtnContainer {
     display: flex;
     margin-top: 50px;
     margin-left: 15%;
 
-    p {
+    .btn {
       position: relative;
       z-index: 1;
       margin: 15px;
@@ -29,6 +29,10 @@
         @include style.buttonHover;
       }
     }
+    .active {
+      text-decoration: 3px underline var(--skin-color);
+      text-underline-offset: 4px;
+    }
   }
   .imagesContainer {
     position: relative;
@@ -36,7 +40,6 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 20px;
-
     div {
       span {
         font-size: style.$fontSmall;
@@ -115,5 +118,24 @@
   .open-dialog {
     visibility: visible;
     transform: scale(1);
+  }
+}
+
+.filterDiv {
+  display: none;
+}
+
+.show {
+  display: block;
+  animation: identifier 1.4s ease-in-out;
+  @keyframes identifier {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
   }
 }

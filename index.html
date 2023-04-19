@@ -133,57 +133,58 @@
 
     <div class="portfolio" id="portfolio">
       <h1>Portfolio</h1>
-      <div class="category">
-        <p>UI/UX Design</p>
-        <p>Front End</p>
-        <p>React</p>
-        <p>Javascript</p>
-        <p>PHP</p>
-        <p>Bootstrap</p>
-        <p>SCSS</p>
+      <div id="myBtnContainer">
+        <p class="btn active" onclick="filterSelection('all')">Show All</p>
+        <p class="btn" onclick="filterSelection('design')">UI/UX Design</p>
+        <p class="btn" onclick="filterSelection('frontEnd')">Front End</p>
+        <p class="btn" onclick="filterSelection('react')">React</p>
+        <p class="btn" onclick="filterSelection('javascript')">Javascript</p>
+        <p class="btn" onclick="filterSelection('php')">PHP</p>
+        <p class="btn" onclick="filterSelection('bootstrap')">Bootstrap</p>
+        <p class="btn" onclick="filterSelection('scss')">SCSS</p>
       </div>
       <div class="imagesContainer">
-        <div onclick="openDialog()">
+        <div onclick="openDialog()" class="filterDiv react frontEnd">
           <img src="images/portofolio/bookReact.png" alt="Book App" />
           <div><span>Book App</span></div>
         </div>
 
-        <div>
+        <div onclick="openDialog()" class="filterDiv react frontEnd">
           <img src="images/portofolio/cart.png" alt="Shopping Cart" />
           <div><span>Shopping Cart</span></div>
         </div>
-        <div>
+        <div class="filterDiv react frontEnd">
           <img src="images/portofolio/recipeApp.png" alt="Recipe App" />
           <div><span>Recipe App</span></div>
         </div>
-        <div>
+        <div class="filterDiv javascript frontEnd">
           <img src="images/portofolio/quotes.png" alt="Random Quotes App" />
           <div><span>Random Quotes App</span></div>
         </div>
-        <div>
+        <div class="filterDiv php bootstrap frontEnd">
           <img src="images/portofolio/moviePHP.png" alt="Movies App" />
           <div><span>Movies App</span></div>
         </div>
-        <div>
+        <div class="filterDiv javascript frontEnd">
           <img
             src="images/portofolio/animalsBlog.png"
             alt="Blog About Animals"
           />
           <div><span>Blog About Animals</span></div>
         </div>
-        <div>
+        <div class="filterDiv javascript frontEnd">
           <img src="images/portofolio/quiz.png" alt="Quizz App" />
           <div><span>Quizz App</span></div>
         </div>
-        <div>
+        <div class="filterDiv javascript frontEnd">
           <img src="images/portofolio/sign.png" alt="Sign Up" />
           <div><span>Sign Up App</span></div>
         </div>
-        <div>
+        <div class="filterDiv javascript frontEnd">
           <img src="images/portofolio/to_do.png" alt="To Do App" />
           <div><span>To Do App</span></div>
         </div>
-        <div>
+        <div class="filterDiv javascript frontEnd">
           <img src="images/portofolio/weather.png" alt="Weather App" />
           <div><span>Weather App</span></div>
         </div>
@@ -236,5 +237,6 @@
     </div>
     <script src="js/style-switcher.js"></script>
     <script src="js/projects-dialog.js"></script>
+    <script src="js/sandbox.js"></script>
   </body>
 </html>

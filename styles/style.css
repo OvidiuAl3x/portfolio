@@ -194,18 +194,18 @@
   padding-top: 80px;
   margin: 0px;
 }
-.portfolio .category {
+.portfolio #myBtnContainer {
   display: flex;
   margin-top: 50px;
   margin-left: 15%;
 }
-.portfolio .category p {
+.portfolio #myBtnContainer .btn {
   position: relative;
   z-index: 1;
   margin: 15px;
   cursor: pointer;
 }
-.portfolio .category p:before {
+.portfolio #myBtnContainer .btn:before {
   content: "";
   position: absolute;
   left: 0;
@@ -219,9 +219,14 @@
   transition: scale 0.25s;
   background-color: var(--skin-color);
 }
-.portfolio .category p:hover:before {
+.portfolio #myBtnContainer .btn:hover:before {
   scale: 1;
   transform-origin: left;
+}
+.portfolio #myBtnContainer .active {
+  -webkit-text-decoration: 3px underline var(--skin-color);
+          text-decoration: 3px underline var(--skin-color);
+  text-underline-offset: 4px;
 }
 .portfolio .imagesContainer {
   position: relative;
@@ -305,6 +310,25 @@
 .portfolio .open-dialog {
   visibility: visible;
   transform: scale(1);
+}
+
+.filterDiv {
+  display: none;
+}
+
+.show {
+  display: block;
+  animation: identifier 1.4s ease-in-out;
+}
+@keyframes identifier {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .style-switcher {
