@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import { FiMenu } from "@react-icons/all-files/fi/FiMenu";
+import { GrClose } from "@react-icons/all-files/gr/GrClose";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -22,7 +23,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="md:hidden" onClick={handleClick}>
-          {!nav ? <MenuIcon className="w-5" /> : <XIcon className="w-5" />}
+          {!nav ? <FiMenu className="w-5" /> : <GrClose className="w-5" />}
         </div>
       </div>
 
