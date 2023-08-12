@@ -19,10 +19,15 @@ module.exports = {
           "0%": { transform: "translate(-200px,0px)" },
           "100%": { transform: "translate(0px,0px)" },
         },
+        navAnim: {
+          "0%": { transform: "translate(0px,-100px)" },
+          "100%": { transform: "translate(0px,0px)" },
+        },
       },
       animation: {
         opacity: "opacity 0.5s ease-in-out",
         transform: "transform 1s",
+        navAnim: "navAnim 1s ease-in-out",
       },
     },
   },
