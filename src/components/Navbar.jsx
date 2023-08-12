@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import { FiMenu } from "@react-icons/all-files/fi/FiMenu";
 import { GrClose } from "@react-icons/all-files/gr/GrClose";
 
+const animation = {
+  underline:
+    "bg-left-bottom bg-gradient-to-r from-emerald-500 to-emerald-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out",
+};
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
@@ -15,11 +20,21 @@ const Navbar = () => {
         <div className="flex items-center w-full">
           <h1 className="text-3xl font-bold ml-10 sm:text-4xl">Ovidiu</h1>
           <ul className="hidden md:flex ml-auto mr-10">
-            <li>Home</li>
-            <li>Skills</li>
-            <li>Works</li>
-            <li>Resume</li>
-            <li>Contact</li>
+            <li className="group  transition-all duration-300 ease-in-out">
+              <span className={animation.underline}>Home</span>
+            </li>
+            <li className="group  transition-all duration-300 ease-in-out">
+              <span className={animation.underline}>Skills</span>
+            </li>
+            <li className="group  transition-all duration-300 ease-in-out">
+              <span className={animation.underline}>Works</span>
+            </li>
+            <li className="group  transition-all duration-300 ease-in-out">
+              <span className={animation.underline}>Resume</span>
+            </li>
+            <li className="group  transition-all duration-300 ease-in-out">
+              <span className={animation.underline}>Contact</span>
+            </li>
           </ul>
         </div>
         <div className="md:hidden" onClick={handleClick}>
