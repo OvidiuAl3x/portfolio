@@ -23,11 +23,16 @@ module.exports = {
           "0%": { transform: "translate(0px,-100px)" },
           "100%": { transform: "translate(0px,0px)" },
         },
+        scaleOp: {
+          "0%": { scale: "0.5", opacity: "0%" },
+          "100%": { scale: "1", opacity: "100%" },
+        },
       },
       animation: {
         opacity: "opacity 0.5s ease-in-out",
         transform: "transform 1s",
         navAnim: "navAnim 1s ease-in-out",
+        scaleOp: "scaleOp 1s ease-in-out",
       },
     },
   },
