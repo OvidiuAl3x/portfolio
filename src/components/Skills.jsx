@@ -17,7 +17,7 @@ const style = {
 
 const Skills = () => {
   return (
-    <div className="max-w-[1240px] m-4 lg:mx-auto md:my-16">
+    <div className="max-w-[1240px] m-4 lg:mx-auto md:my-16 ">
       <h1 className="mt-5 mb-2 mx-5 text-2xl md:text-3xl font-bold text-zinc-500">
         My Skills
       </h1>
@@ -51,7 +51,7 @@ const Skills = () => {
               <p className="mx-2 text-lg font-medium">Javascript</p>
             </div>
             <div className="bg-zinc-200 w-full rounded-full">
-              <div className="bg-emerald-500 w-[60%] h-3 rounded-full"></div>
+              <div className="bg-emerald-500 w-[65%] h-3 rounded-full"></div>
             </div>
           </div>
 
@@ -61,7 +61,7 @@ const Skills = () => {
               <p className="mx-2 text-lg font-medium">React</p>
             </div>
             <div className="bg-zinc-200 w-full rounded-full">
-              <div className="bg-emerald-500 w-[70%] h-3 rounded-full"></div>
+              <div className="bg-emerald-500 w-[76%] h-3 rounded-full"></div>
             </div>
           </div>
 

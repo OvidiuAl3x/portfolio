@@ -29,7 +29,8 @@ const images = [
   {
     project1: blog,
     title: "Blog About Animals",
-    link: "https://stackoverflow.com/questions/63759410/selecting-images-and-displaying-titles-in-react",
+    linkMore:
+      "https://stackoverflow.com/questions/63759410/selecting-images-and-displaying-titles-in-react",
   },
   { project1: Quizz, title: "Quizz APP" },
   { project1: to_do, title: "To Do APP" },
@@ -38,7 +39,7 @@ const images = [
 
 const Works = () => {
   return (
-    <div className="max-w-[1240px] m-4 lg:mx-auto">
+    <div className="max-w-[1240px] m-4 lg:mx-auto h-screen">
       <h1 className="mt-5 mb-2 mx-5 text-2xl md:text-3xl font-bold text-zinc-500">
         Works
       </h1>
@@ -46,7 +47,7 @@ const Works = () => {
 
       <div className="grid md:grid-cols-3 gap-16 m-5">
         {images.map((image, index) => (
-          <div>
+          <div key={index} className="animate-scaleOp">
             <div className="relative group  h-full">
               <img
                 src={image.project1}
@@ -55,16 +56,19 @@ const Works = () => {
               />
 
               <div className={style.hoverDiv}>
+                {image.linkMore ? (
+                  <a
+                    href={image.linkMore}
+                    className={style.hoverLink}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    More
+                  </a>
+                ) : null}
+
                 <a
-                  href={image.link}
-                  className={style.hoverLink}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  More
-                </a>
-                <a
-                  href={image.link}
+                  href={image.linkMore}
                   className={style.hoverLink}
                   target="_blank"
                   rel="noreferrer"
