@@ -1,3 +1,4 @@
+//! DOWNLOAD CV TO ADD
 import React from "react";
 import { FiDownload } from "@react-icons/all-files/fi/FiDownload";
 import { FaLinkedinIn } from "@react-icons/all-files/fa/FaLinkedinIn";

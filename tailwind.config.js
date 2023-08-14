@@ -34,6 +34,12 @@ module.exports = {
         navAnim: "navAnim 1s ease-in-out",
         scaleOp: "scaleOp 1s ease-in-out",
       },
+      gridTemplateRows: {
+        8: "repeat(8, minmax(0, 5vw))",
+      },
+      gridTemplateColumns: {
+        8: "repeat(8, minmax(0, 1fr))",
+      },
     },
   },
   plugins: [],

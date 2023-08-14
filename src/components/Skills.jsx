@@ -17,8 +17,8 @@ const style = {
 
 const Skills = () => {
   return (
-    <div className="max-w-[1240px] m-4 lg:m-auto">
-      <h1 className="mt-5 mb-2 mx-5 text-2xl md:text-3xl font-bold">
+    <div className="max-w-[1240px] m-4 lg:mx-auto md:my-16">
+      <h1 className="mt-5 mb-2 mx-5 text-2xl md:text-3xl font-bold text-zinc-500">
         My Skills
       </h1>
       <hr className="w-full" />

@@ -18,7 +18,9 @@ const Navbar = () => {
     <div className="w-screen h-[80px] z-10 bg-zinc-200 fixed drop-shadow-lg">
       <div className="px-2 flex justify-between items-center w-full h-full animate-navAnim">
         <div className="flex items-center w-full">
-          <h1 className="text-3xl font-bold ml-10 sm:text-4xl">Ovidiu</h1>
+          <h1 className="text-3xl font-bold ml-2 md:ml-10 sm:text-4xl">
+            Ovidiu
+          </h1>
           <ul className="hidden md:flex ml-auto mr-10">
             <li className="group  transition-all duration-300 ease-in-out">
               <span className={animation.underline}>Home</span>
@@ -38,7 +40,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="md:hidden" onClick={handleClick}>
-          {!nav ? <FiMenu className="w-5" /> : <GrClose className="w-5" />}
+          {!nav ? <FiMenu className="w-10 text-2xl" /> : <GrClose className="w-10 text-2xl" />}
         </div>
       </div>
 
