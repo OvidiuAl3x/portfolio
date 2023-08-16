@@ -21,7 +21,7 @@ const style = {
   text: "text-center group-hover:text-red-300 mt-3 text-lg",
 };
 
-const images = [
+export const images = [
   {
     project1: Book_App,
     title: "Book App",
@@ -39,6 +39,11 @@ const images = [
       "• Users can Search books by title or author or filter books by genre",
       <br />,
       "• Users can sort the book ascending and descending by year, review or pages",
+    ],
+    slide: [
+      { img: `${Movies_App}`, title: "A" },
+      { img: `${Quizz}`, title: "B" },
+      { img: `${Recipe_App}`, title: "C" },
     ],
   },
   {
@@ -88,7 +93,7 @@ const Works = () => {
       </h1>
       <hr className="w-full" />
 
-      <div className="grid md:grid-cols-3 gap-16 m-5">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-16 m-5">
         {images.map((image, index) => (
           <div key={index} className="animate-scaleOp">
             <div className="relative group  h-full">
@@ -104,19 +109,9 @@ const Works = () => {
                     props={image.linkMore}
                     button={<button className={style.hoverLink}>More</button>}
                     LgUsed={image.LgUsed}
+                    slide={image.slide}
                   />
                 ) : null}
-                {/* {image.linkMore ? (
-                  <a
-                    href={image.linkMore}
-                    className={style.hoverLink}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    More
-                  </a>
-
-                ) : null} */}
 
                 {image.linkGit ? (
                   <a

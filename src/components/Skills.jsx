@@ -10,6 +10,8 @@ import { SiPhp } from "@react-icons/all-files/si/SiPhp";
 import { SiMui } from "react-icons/si";
 import { BsGit } from "react-icons/bs";
 
+
+
 const style = {
   skills:
     "bg-emerald-500 m-3 rounded-lg flex flex-col items-center p-5 w-36 justify-center",
