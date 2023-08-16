@@ -9,32 +9,75 @@ import Quizz from "../assets/portofolio/quiz.png";
 import Quotes from "../assets/portofolio/quotes.png";
 import to_do from "../assets/portofolio/to_do.png";
 import Weather from "../assets/portofolio/weather.png";
+import Description from "./Description";
 
 const style = {
   imgStyle:
-    "rounded border-black border-2 w-full h-full object-cover drop-shadow-lg group-hover:blur-sm",
+    "rounded border-black border-2 w-full h-full object-cover drop-shadow-lg",
   hoverDiv:
-    "opacity-0 group-hover:opacity-100 duration-300 absolute left-0 bottom-20 right-0 z-2 flex text-xl font-medium",
+    "hidden group-hover:flex duration-300 absolute left-0 bottom-0 right-0 h-full z-2  text-xl font-medium backdrop-blur-md bg-black/20",
   hoverLink:
-    "bg-emerald-500 m-auto rounded-lg p-2 hover:scale-110 flex items-center",
+    "bg-emerald-500 w-auto h-fit mt-auto ml-auto mr-auto mb-4 md:m-auto rounded-lg p-2 hover:scale-110 flex items-center",
   text: "text-center group-hover:text-red-300 mt-3 text-lg",
 };
 
 const images = [
-  { project1: Book_App, title: "Book App" },
-  { project1: Shopping_Cart, title: "Shopping Cart" },
-  { project1: Recipe_App, title: "Recipe App" },
-  { project1: Quotes, title: "Random Quotes App" },
-  { project1: Movies_App, title: "Movies App" },
+  {
+    project1: Book_App,
+    title: "Book App",
+    linkGit: "https://github.com/OvidiuAl3x/books.git",
+    LgUsed: "HTML, CSS, JavaScript, React",
+    linkMore: [
+      "• Created a book app in React that utilized json data",
+      <br />,
+      "• Added login functionality (token)",
+      <br />,
+      "• Users after login are allowed to add to favorites they books",
+      <br />,
+      "• Admin can Add, Delete, Edit Books",
+      <br />,
+      "• Users can Search books by title or author or filter books by genre",
+      <br />,
+      "• Users can sort the book ascending and descending by year, review or pages",
+    ],
+  },
+  {
+    project1: Shopping_Cart,
+    title: "Shopping Cart",
+    linkGit: "https://github.com/OvidiuAl3x/shopping-cart",
+    linkMore: [
+      "• Created a book app in React that utilized json data",
+      <br />,
+      "• Added login functionality (token)",
+    ],
+  },
+  { project1: Recipe_App, title: "Recipe App", linkMore: "" },
+  {
+    project1: Quotes,
+    title: "Random Quotes App",
+    linkGit: "https://github.com/OvidiuAl3x/random-quotes-app",
+  },
+  { project1: Movies_App, title: "Movies App", linkMore: "" },
   {
     project1: blog,
     title: "Blog About Animals",
-    linkMore:
-      "https://stackoverflow.com/questions/63759410/selecting-images-and-displaying-titles-in-react",
+    // linkMore: `${(<Home />)}`,
   },
-  { project1: Quizz, title: "Quizz APP" },
-  { project1: to_do, title: "To Do APP" },
-  { project1: Weather, title: "Weather APP" },
+  {
+    project1: Quizz,
+    title: "Quizz APP",
+    linkGit: "https://github.com/OvidiuAl3x/Quizz-App",
+  },
+  {
+    project1: to_do,
+    title: "To Do APP",
+    linkGit: "https://github.com/OvidiuAl3x/To-Do-App",
+  },
+  {
+    project1: Weather,
+    title: "Weather APP",
+    linkGit: "https://github.com/OvidiuAl3x/Weather-App",
+  },
 ];
 
 const Works = () => {
@@ -57,6 +100,13 @@ const Works = () => {
 
               <div className={style.hoverDiv}>
                 {image.linkMore ? (
+                  <Description
+                    props={image.linkMore}
+                    button={<button className={style.hoverLink}>More</button>}
+                    LgUsed={image.LgUsed}
+                  />
+                ) : null}
+                {/* {image.linkMore ? (
                   <a
                     href={image.linkMore}
                     className={style.hoverLink}
@@ -65,17 +115,20 @@ const Works = () => {
                   >
                     More
                   </a>
-                ) : null}
 
-                <a
-                  href={image.linkMore}
-                  className={style.hoverLink}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FaGithub className="mr-2" />
-                  Code
-                </a>
+                ) : null} */}
+
+                {image.linkGit ? (
+                  <a
+                    href={image.linkGit}
+                    className={style.hoverLink}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaGithub className="mr-2" />
+                    Code
+                  </a>
+                ) : null}
               </div>
             </div>
 
