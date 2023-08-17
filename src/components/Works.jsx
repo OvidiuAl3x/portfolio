@@ -15,11 +15,11 @@ const style = {
 
 const Works = () => {
   return (
-    <div className="max-w-[1240px] m-4 lg:mx-auto h-screen">
+    <div className="max-w-[1240px] m-4 lg:mx-auto ">
       <h1 className="mt-5 mb-2 mx-5 text-2xl md:text-3xl font-bold text-zinc-500">
         Works
       </h1>
-      <hr className="w-full" />
+      <hr className="w-full border-emerald-500" />
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-16 m-5">
         {ImageDescription.map((image, index) => (
