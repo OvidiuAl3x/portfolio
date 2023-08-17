@@ -12,7 +12,7 @@ const buttonStyle = {
 
 const Home = () => {
   return (
-    <div className="w-full h-screen bg-zinc-200 flex flex-col justify-between bg-gradient-to-r from-[#6bc4c9] to-emerald-500">
+    <div className="w-full h-screen flex flex-col justify-between bg-gradient-to-r from-[#6bc4c9] to-emerald-500">
       <div className="grid md:grid-cols-2 max-w-[1240px] m-auto animate-[opacity_2s_ease-in-out]">
         <div className="flex flex-col justify-center md:items-start w-full px-2 py-8 order-last md:order-first rgb(16 185 129">
           <h1 className="py-3 text-5xl md:text-6xl font-bold">
