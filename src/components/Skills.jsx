@@ -17,7 +17,8 @@ const style = {
 
 const Skills = () => {
   return (
-    <div className="max-w-[1240px] m-4 lg:mx-auto md:my-16 " id="skills">
+    <div className="max-w-[1240px] m-4 lg:mx-auto md:my-16 ">
+      <span className="relative top-[-8em]" id="skills"></span>
       <h1 className="mt-5 mb-2 mx-5 text-2xl md:text-3xl font-bold text-zinc-500">
         My Skills
       </h1>

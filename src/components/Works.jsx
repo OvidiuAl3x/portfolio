@@ -15,51 +15,54 @@ const style = {
 
 const Works = () => {
   return (
-    <div className="max-w-[1240px] m-4 lg:mx-auto " id="works">
-      <h1 className="mt-5 mb-2 mx-5 text-2xl md:text-3xl font-bold text-zinc-500">
-        Works
-      </h1>
-      <hr className="w-full border-emerald-500" />
+ 
+      <div className="max-w-[1240px] m-4  lg:mx-auto ">
+        <span className="relative top-[-8em]" id="works"></span>
+        <h1 className="mb-2 mx-5 text-2xl md:text-3xl font-bold text-zinc-500">
+          Works
+        </h1>
+        <hr className="w-full border-emerald-500" />
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-16 m-5">
-        {ImageDescription.map((image, index) => (
-          <div key={index} className="animate-scaleOp">
-            <div className="relative group  h-full">
-              <img
-                src={image.project1}
-                className={style.imgStyle}
-                alt={image.title}
-              />
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-16 m-5">
+          {ImageDescription.map((image, index) => (
+            <div key={index} className="animate-scaleOp">
+              <div className="relative group  h-full">
+                <img
+                  src={image.project1}
+                  className={style.imgStyle}
+                  alt={image.title}
+                />
 
-              <div className={style.hoverDiv}>
-                {image.linkMore ? (
-                  <Description
-                    props={image.linkMore}
-                    button={<button className={style.hoverLink}>More</button>}
-                    LgUsed={image.LgUsed}
-                    slide={image.slide}
-                  />
-                ) : null}
+                <div className={style.hoverDiv}>
+                  {image.linkMore ? (
+                    <Description
+                      props={image.linkMore}
+                      button={<button className={style.hoverLink}>More</button>}
+                      LgUsed={image.LgUsed}
+                      slide={image.slide}
+                    />
+                  ) : null}
 
-                {image.linkGit ? (
-                  <a
-                    href={image.linkGit}
-                    className={style.hoverLink}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <FaGithub className="mr-2" />
-                    Code
-                  </a>
-                ) : null}
+                  {image.linkGit ? (
+                    <a
+                      href={image.linkGit}
+                      className={style.hoverLink}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FaGithub className="mr-2" />
+                      Code
+                    </a>
+                  ) : null}
+                </div>
               </div>
-            </div>
 
-            <p className={style.text}>{image.title}</p>
-          </div>
-        ))}
+              <p className={style.text}>{image.title}</p>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+
   );
 };
 

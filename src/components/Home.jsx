@@ -1,9 +1,9 @@
-//! DOWNLOAD CV TO ADD
 import React from "react";
 import { FiDownload } from "@react-icons/all-files/fi/FiDownload";
 import { FaLinkedinIn } from "@react-icons/all-files/fa/FaLinkedinIn";
 import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
 import bgImg from "../assets/1.jpg";
+import CV from "../assets/CV/Resume-Ovidiu-Alexandru-Ciobanu.pdf";
 
 const buttonStyle = {
   resumeBTN:
@@ -12,7 +12,10 @@ const buttonStyle = {
 
 const Home = () => {
   return (
-    <div className="w-full h-screen flex flex-col justify-between bg-gradient-to-r from-[#6bc4c9] to-emerald-500" id="home">
+    <div
+      className="w-full h-screen flex flex-col justify-between bg-gradient-to-r from-[#6bc4c9] to-emerald-500 "
+      id="home"
+    >
       <div className="grid md:grid-cols-2 max-w-[1240px] m-auto animate-[opacity_2s_ease-in-out]">
         <div className="flex flex-col justify-center md:items-start w-full px-2 py-8 order-last md:order-first rgb(16 185 129">
           <h1 className="py-3 text-5xl md:text-6xl font-bold">
@@ -22,9 +25,17 @@ const Home = () => {
             Front-End Developer
           </h2>
           <div className="flex w-full my-4 items-center">
-            <button className={buttonStyle.resumeBTN}>
-              Resume <FiDownload className="mx-1" />
-            </button>
+            <a
+              href={CV}
+              download="CV-OvidiuCiobanu-pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className={buttonStyle.resumeBTN}>
+                Resume <FiDownload className="mx-1" />
+              </button>
+            </a>
+
             <a
               href="https://www.linkedin.com/in/ovidiu-alexandru-ciobanu/"
               className="mx-2"

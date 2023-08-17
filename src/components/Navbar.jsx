@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-screen h-[80px] z-10 bg-zinc-200 fixed md:relative md:w-full drop-shadow-lg font-bold">
+    <div className="h-[80px] z-10 bg-zinc-200  fixed w-full drop-shadow-lg font-bold">
       <div className="px-2 flex justify-between items-center w-full h-full animate-navAnim">
         <div className="flex items-center w-full">
           <h1 className="text-3xl font-bold ml-2 md:ml-10 sm:text-4xl">

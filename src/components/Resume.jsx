@@ -2,7 +2,8 @@ import React from "react";
 
 const Resume = () => {
   return (
-    <div className="max-w-[1240px] my-32 md:mt-[10em] mx-4 lg:mx-auto" id="resume">
+    <div className="max-w-[1240px] my-32 md:mt-[10em] mx-4 lg:mx-auto">
+      <span className="relative top-[-8em]" id="resume"></span>
       <h1 className="mt-5 mb-2 mx-5 text-2xl md:text-3xl font-bold text-zinc-500">
         Resume
       </h1>

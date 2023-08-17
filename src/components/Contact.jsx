@@ -5,7 +5,9 @@ import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
 
 const Contact = () => {
   return (
-    <div className="max-w-[1240px] mb-10 mx-4 lg:mx-auto md:h-[50vh]" id="contact">
+    <div className="max-w-[1240px] mb-10 mx-4 lg:mx-auto md:h-[50vh]">
+      <span className="relative top-[-8em]" id="contact"></span>
+
       <h1 className="mt-5 mb-2 mx-5 text-2xl md:text-3xl font-bold text-zinc-500">
         Contact
       </h1>
@@ -21,7 +23,11 @@ const Contact = () => {
       </div>
       <div className="md:grid md:grid-cols-3 mt-10">
         <div className="flex flex-col items-center mt-10">
-          <a href="">
+          <a
+            href="https://github.com/OvidiuAl3x"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaGithub className="text-4xl text-emerald-600 hover:scale-125" />
           </a>
           <p className="font-bold">Github</p>
@@ -29,7 +35,11 @@ const Contact = () => {
         </div>
 
         <div className="flex flex-col items-center mt-10">
-          <a href="">
+          <a
+            href="https://www.linkedin.com/in/ovidiu-alexandru-ciobanu/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaLinkedinIn className="text-4xl text-emerald-600 hover:scale-125" />
           </a>
           <p className="font-bold">Linkedin</p>
