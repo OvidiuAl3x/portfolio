@@ -10,8 +10,6 @@ import { SiPhp } from "@react-icons/all-files/si/SiPhp";
 import { SiMui } from "react-icons/si";
 import { BsGit } from "react-icons/bs";
 
-
-
 const style = {
   skills:
     "bg-emerald-500 m-3 rounded-lg flex flex-col items-center p-5 w-36 justify-center",
@@ -19,7 +17,7 @@ const style = {
 
 const Skills = () => {
   return (
-    <div className="max-w-[1240px] m-4 lg:mx-auto md:my-16 ">
+    <div className="max-w-[1240px] m-4 lg:mx-auto md:my-16 " id="skills">
       <h1 className="mt-5 mb-2 mx-5 text-2xl md:text-3xl font-bold text-zinc-500">
         My Skills
       </h1>

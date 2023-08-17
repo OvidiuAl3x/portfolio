@@ -5,7 +5,7 @@ import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
 
 const Contact = () => {
   return (
-    <div className="max-w-[1240px] mb-10 mx-4 lg:mx-auto md:h-[50vh]">
+    <div className="max-w-[1240px] mb-10 mx-4 lg:mx-auto md:h-[50vh]" id="contact">
       <h1 className="mt-5 mb-2 mx-5 text-2xl md:text-3xl font-bold text-zinc-500">
         Contact
       </h1>

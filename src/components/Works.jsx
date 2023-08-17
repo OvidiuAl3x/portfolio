@@ -15,7 +15,7 @@ const style = {
 
 const Works = () => {
   return (
-    <div className="max-w-[1240px] m-4 lg:mx-auto ">
+    <div className="max-w-[1240px] m-4 lg:mx-auto " id="works">
       <h1 className="mt-5 mb-2 mx-5 text-2xl md:text-3xl font-bold text-zinc-500">
         Works
       </h1>
