@@ -25,7 +25,7 @@ const Resume = () => {
                 Front End - React Participant (Endava)
               </p>
               <span className="text-[16px] text-emerald-600">
-                09.2022-11.2022
+                Apprenticeship 09.2022-11.2022
               </span>
               <p className="text-sm">
                 <strong>Skills used: </strong>React, Axios, Material UI, React
