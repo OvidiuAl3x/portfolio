@@ -27,7 +27,7 @@ const Home = () => {
           <div className="flex w-full my-4 items-center">
             <a
               href={CV}
-              download="CV-OvidiuCiobanu-pdf"
+              download="CV-OvidiuCiobanu"
               target="_blank"
               rel="noreferrer"
             >
