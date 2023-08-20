@@ -33,3 +33,20 @@ body {
 h1 {
   text-wrap: balance;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  border-left: 0.5px solid black;
+}
+
+::-webkit-scrollbar-thumb {
+  border-left: 0.5px solid black;
+  background: #10b981;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #097a55;
+}

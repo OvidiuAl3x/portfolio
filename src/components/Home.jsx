@@ -3,7 +3,7 @@ import { FiDownload } from "@react-icons/all-files/fi/FiDownload";
 import { FaLinkedinIn } from "@react-icons/all-files/fa/FaLinkedinIn";
 import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
 import bgImg from "../assets/1.jpg";
-import CV from "../assets/CV/Resume-Ovidiu-Alexandru-Ciobanu.pdf";
+import CV from "../assets/CV/CV.pdf";
 
 const buttonStyle = {
   resumeBTN:
