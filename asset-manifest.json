@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.320f9cca.css",
-    "main.js": "/portfolio/static/js/main.2d696da0.js",
+    "main.css": "/portfolio/static/css/main.0f6a99e7.css",
+    "main.js": "/portfolio/static/js/main.46623a2e.js",
     "static/media/1.png": "/portfolio/static/media/1.abc832ccf6953183bad6.png",
     "static/media/weather.png": "/portfolio/static/media/weather.1d07d13ea764ec293b1b.png",
     "static/media/bookReact.png": "/portfolio/static/media/bookReact.1cd6d2ee17c27d28d677.png",
@@ -29,7 +29,7 @@
     "static/media/search.png": "/portfolio/static/media/search.a9fcd120fd7bd19b7216.png",
     "static/media/mybooksLogin.png": "/portfolio/static/media/mybooksLogin.65165067f27c75b2aea9.png",
     "static/media/1.jpg": "/portfolio/static/media/1.cfb88b4a645d60fa2222.jpg",
-    "static/media/Resume-Ovidiu-Alexandru-Ciobanu.pdf": "/portfolio/static/media/Resume-Ovidiu-Alexandru-Ciobanu.8eab81cf6b61eb168355.pdf",
+    "static/media/CV.pdf": "/portfolio/static/media/CV.09ba71634f9944968b8b.pdf",
     "static/media/s2.png": "/portfolio/static/media/s2.067d0109a81163cc7729.png",
     "static/media/quiz.png": "/portfolio/static/media/quiz.bbe03acfbc31f51adb49.png",
     "static/media/P3.png": "/portfolio/static/media/P3.ef7d1fc53cdbf7c76656.png",
@@ -39,11 +39,11 @@
     "static/media/quotes.png": "/portfolio/static/media/quotes.85daea2bf67f81fb72c7.png",
     "static/media/to_do.png": "/portfolio/static/media/to_do.104ece8766bc6727e13e.png",
     "index.html": "/portfolio/index.html",
-    "main.320f9cca.css.map": "/portfolio/static/css/main.320f9cca.css.map",
-    "main.2d696da0.js.map": "/portfolio/static/js/main.2d696da0.js.map"
+    "main.0f6a99e7.css.map": "/portfolio/static/css/main.0f6a99e7.css.map",
+    "main.46623a2e.js.map": "/portfolio/static/js/main.46623a2e.js.map"
   },
   "entrypoints": [
-    "static/css/main.320f9cca.css",
-    "static/js/main.2d696da0.js"
+    "static/css/main.0f6a99e7.css",
+    "static/js/main.46623a2e.js"
   ]
 }
