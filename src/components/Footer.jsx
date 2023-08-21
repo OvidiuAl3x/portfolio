@@ -20,6 +20,7 @@ const Footer = () => {
           Contact
         </a>
       </div>
+
       <h1 className="mb-2">|© 2023 Ovidiu Ciobanu | All rights reserved |</h1>
     </div>
   );

@@ -16,7 +16,7 @@ module.exports = {
           "100%": { opacity: "100%" },
         },
         transform: {
-          "0%": { transform: "translate(-200px,0px)" },
+          "0%": { transform: "translate(-400px,0px)" },
           "100%": { transform: "translate(0px,0px)" },
         },
         navAnim: {
@@ -33,12 +33,6 @@ module.exports = {
         transform: "transform 1s",
         navAnim: "navAnim 1s ease-in-out",
         scaleOp: "scaleOp 1s ease-in-out",
-      },
-      gridTemplateRows: {
-        8: "repeat(8, minmax(0, 5vw))",
-      },
-      gridTemplateColumns: {
-        8: "repeat(8, minmax(0, 1fr))",
       },
     },
   },

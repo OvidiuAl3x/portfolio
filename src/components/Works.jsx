@@ -2,6 +2,7 @@ import React from "react";
 import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
 import Description from "./Description";
 import { ImageDescription } from "./ImageDescription";
+import Animation from "./Animation";
 
 const style = {
   imgStyle:
@@ -15,17 +16,19 @@ const style = {
 
 const Works = () => {
   return (
- 
-      <div className="max-w-[1240px] m-4  lg:mx-auto ">
-        <span className="relative top-[-8em]" id="works"></span>
+    <div className="max-w-[1240px] m-4  lg:mx-auto ">
+      <span className="relative top-[-8em]" id="works"></span>
+      <Animation props="animate-[scaleOp_2s]">
         <h1 className="mb-2 mx-5 text-2xl md:text-3xl font-bold text-zinc-500">
           Works
         </h1>
-        <hr className="w-full border-emerald-500" />
+      </Animation>
+      <hr className="w-full border-emerald-500" />
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-16 m-5">
-          {ImageDescription.map((image, index) => (
-            <div key={index} className="animate-scaleOp">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-16 m-5">
+        {ImageDescription.map((image, index) => (
+          <Animation props="animate-[scaleOp_2s]">
+            <div key={index}>
               <div className="relative group  h-full">
                 <img
                   src={image.project1}
@@ -59,10 +62,10 @@ const Works = () => {
 
               <p className={style.text}>{image.title}</p>
             </div>
-          ))}
-        </div>
+          </Animation>
+        ))}
       </div>
-
+    </div>
   );
 };
 

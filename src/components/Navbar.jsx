@@ -6,6 +6,7 @@ const style = {
   underline:
     "bg-left-bottom bg-gradient-to-r from-emerald-500 to-emerald-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out",
   li: "group  transition-all duration-300 ease-in-out  hover:text-emerald-700",
+  navSM: "border-b-2 border-zinc-300 w-full p-4",
 };
 
 const Navbar = () => {
@@ -66,20 +67,30 @@ const Navbar = () => {
             : "absolute bg-zinc-200 w-full px-8 animate-opacity md:hidden"
         }
       >
-        <a href="#home" className="animate-transform">
-          <li className="border-b-2  border-zinc-300 w-full p-4">Home</li>
+        <a href="#home" onClick={handleClick}>
+          <li className={style.navSM}>
+            <p className="animate-transform">Home</p>
+          </li>
         </a>
-        <a href="#skills" className="animate-[transform_1.5s]">
-          <li className="border-b-2 border-zinc-300 w-full p-4">Skills</li>
+        <a href="#skills" onClick={handleClick}>
+          <li className={style.navSM}>
+            <p className="animate-[transform_1.5s]">Skills</p>
+          </li>
         </a>
-        <a href="#works" className="animate-[transform_2s]">
-          <li className="border-b-2 border-zinc-300 w-full p-4">Works</li>
+        <a href="#works" onClick={handleClick}>
+          <li className={style.navSM}>
+            <p className="animate-[transform_2s]">Works</p>
+          </li>
         </a>
-        <a href="#resume" className="animate-[transform_2.5s]">
-          <li className="border-b-2 border-zinc-300 w-full p-4">Resume</li>
+        <a href="#resume" onClick={handleClick}>
+          <li className={style.navSM}>
+            <p className="animate-[transform_2.5s]">Resume</p>
+          </li>
         </a>
-        <a href="#contact" className="animate-[transform_3s]">
-          <li className="border-b-2 border-zinc-300 w-full p-4">Contact</li>
+        <a href="#contact" onClick={handleClick}>
+          <li className={style.navSM}>
+            <p className="animate-[transform_3s]">Contact</p>
+          </li>
         </a>
       </ul>
     </div>
