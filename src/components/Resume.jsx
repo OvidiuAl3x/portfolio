@@ -6,7 +6,7 @@ const Resume = () => {
     <div className="max-w-[1240px] my-32 md:mt-[10em] mx-4 lg:mx-auto">
       <span className="relative top-[-8em]" id="resume"></span>
       <Animation props="animate-[scaleOp_2s]">
-        <h1 className="mt-5 mb-2 mx-5 text-2xl md:text-3xl font-bold text-zinc-500">
+        <h1 className="mt-5 mb-2 mx-5 text-2xl md:text-3xl font-bold text-zinc-500 dark:text-zinc-300">
           Resume
         </h1>
       </Animation>
@@ -15,19 +15,19 @@ const Resume = () => {
       <div className="grid md:grid-cols-2 m-5 md:gap-10">
         <div className="flex flex-col items-center">
           <Animation props="animate-[scaleOp_2s]">
-            <h1 className="border-2 border-emerald-00 rounded-3xl py-1 px-8 font-semibold text-xl w-fit m-10 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] text-center">
+            <h1 className="border-2 border-emerald-00 rounded-3xl py-1 px-8 font-semibold text-xl w-fit m-10 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] text-center dark:text-emerald-500">
               Experience
             </h1>
           </Animation>
           <div className="relative md:mx-4">
             <Animation props="animate-[scaleOp_2s]">
               <div className="flex absolute left-[-150px] top-1/2 items-center rotate-[90deg] sm:left-[-180px]">
-                <div className="w-[12px] h-[12px] rounded-full bg-emerald-500 border-2 border-black"></div>
-                <div className="w-[230px] bg-emerald-500 h-[2px] sm:w-[300px]"></div>
-                <div className="w-[12px] h-[12px] rounded-full bg-emerald-500 border-2 border-black"></div>
+                <div className="w-[12px] h-[12px] rounded-full bg-emerald-500 border-2 border-black dark:bg-emerald-700"></div>
+                <div className="w-[230px] bg-emerald-500 h-[2px] sm:w-[300px]  dark:bg-emerald-700"></div>
+                <div className="w-[12px] h-[12px] rounded-full bg-emerald-500 border-2 border-black dark:bg-emerald-700"></div>
               </div>
 
-              <div className="border-2 border-emerald-500 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg">
+              <div className="border-2 border-emerald-500 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg dark:text-zinc-200 dark:border-emerald-700">
                 <p className="font-bold text-md">
                   Front End - React Participant (Endava)
                 </p>
@@ -39,7 +39,7 @@ const Resume = () => {
                   Router, Agile Methodologies
                 </p>
 
-                <ul className="list-disc mt-2 marker:text-emerald-700 text-sm">
+                <ul className="list-disc mt-2 marker:text-emerald-700 text-sm dark:marker:text-emerald-500">
                   <p>Skills acquired:</p>
                   <li>
                     Successfully collaborated in a cross-functional team of 9
@@ -77,19 +77,19 @@ const Resume = () => {
 
         <div className="flex flex-col items-center">
           <Animation props="animate-[scaleOp_2s]">
-            <h1 className="border-2 border-emerald-00 rounded-3xl py-1 px-8 font-semibold text-xl w-fit m-10 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] text-center">
+            <h1 className="border-2 border-emerald-00 rounded-3xl py-1 px-8 font-semibold text-xl w-fit m-10 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] text-center dark:text-emerald-500">
               Education And Training
             </h1>
           </Animation>
           <Animation props="animate-[scaleOp_2s]">
             <div className="relative md:mx-4">
               <div className="flex absolute left-[-150px] top-1/2 items-center rotate-[90deg] sm:left-[-180px]">
-                <div className="w-[12px] h-[12px] rounded-full bg-emerald-500 border-2 border-black"></div>
-                <div className="w-[230px] bg-emerald-500 h-[2px] sm:w-[300px]"></div>
-                <div className="w-[12px] h-[12px] rounded-full bg-emerald-500 border-2 border-black"></div>
+                <div className="w-[12px] h-[12px] rounded-full bg-emerald-500 border-2 border-black dark:bg-emerald-700"></div>
+                <div className="w-[230px] bg-emerald-500 h-[2px] sm:w-[300px] dark:bg-emerald-700"></div>
+                <div className="w-[12px] h-[12px] rounded-full bg-emerald-500 border-2 border-black dark:bg-emerald-700"></div>
               </div>
 
-              <div className="border-2 border-emerald-500 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg">
+              <div className="border-2 border-emerald-500 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg dark:text-zinc-200 dark:border-emerald-700">
                 <p className="font-bold text-md">
                   Web Development - Advanced Level (Digital Nation)
                 </p>
@@ -101,7 +101,7 @@ const Resume = () => {
                   Javascript
                 </p>
 
-                <ul className="list-disc mt-2 marker:text-emerald-700 text-sm">
+                <ul className="list-disc mt-2 marker:text-emerald-700 text-sm dark:marker:text-emerald-500">
                   <p>Skills acquired:</p>
                   <li>
                     usage of PHP arrays, looping, interactions with forms,

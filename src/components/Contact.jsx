@@ -10,23 +10,23 @@ const Contact = () => {
       <span className="relative top-[-8em]" id="contact"></span>
 
       <Animation props="animate-[scaleOp_2s]">
-        <h1 className="mt-5 mb-2 mx-5 text-2xl md:text-3xl font-bold text-zinc-500">
+        <h1 className="mt-5 mb-2 mx-5 text-2xl md:text-3xl font-bold text-zinc-500 dark:text-zinc-300">
           Contact
         </h1>
       </Animation>
       <hr className="w-full border-emerald-500" />
       <Animation props="animate-[scaleOp_2s]">
         <div className="text-center">
-          <h1 className="text-emerald-700 font-bold md:text-xl mt-10 mb-3">
+          <h1 className="text-emerald-700 font-bold md:text-xl mt-10 mb-3 dark:text-emerald-500">
             Have You Any Questions ?
           </h1>
-          <p className="text-zinc-400 text-sm md:text-md">
+          <p className="text-zinc-400 text-sm md:text-md dark:text-zinc-300">
             I'AM AT YOUR SERVICES
           </p>
         </div>
       </Animation>
       <Animation props="animate-[scaleOp_3s]">
-        <div className="md:grid md:grid-cols-3 mt-10">
+        <div className="md:grid md:grid-cols-3 mt-10 dark:text-zinc-300">
           <div className="flex flex-col items-center mt-10">
             <a
               href="https://github.com/OvidiuAl3x"

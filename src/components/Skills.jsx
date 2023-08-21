@@ -18,21 +18,21 @@ const style = {
 
 const Skills = () => {
   return (
-    <div className="max-w-[1240px] m-4 lg:mx-auto md:my-16 ">
+    <div className="max-w-[1240px] m-4 lg:mx-auto md:my-16">
       <span className="relative top-[-8em]" id="skills"></span>
       <Animation props="animate-[scaleOp_2s]">
-        <h1 className="mt-5 mb-2 mx-5 text-2xl md:text-3xl font-bold text-zinc-500">
+        <h1 className="mt-5 mb-2 mx-5 text-2xl md:text-3xl font-bold text-zinc-500 dark:text-zinc-300">
           My Skills
         </h1>
       </Animation>
       <hr className="w-full border-emerald-500" />
 
-      <div className="grid md:grid-cols-2 m-5">
-        <div>
+      <div className="grid md:grid-cols-2 m-5 ">
+        <div className="dark:text-emerald-500">
           <div className="my-4">
             <Animation props="animate-[transform_1.7s]">
               <div className="flex my-2 items-center">
-                <AiFillHtml5 className="text-emerald-700 text-lg" />
+                <AiFillHtml5 className="text-emerald-700 text-lg dark:text-emerald-500" />
                 <p className="mx-2 text-lg font-medium">HTML</p>
               </div>
             </Animation>
@@ -46,7 +46,7 @@ const Skills = () => {
           <div className="my-4">
             <Animation props="animate-[transform_2s]">
               <div className="flex my-2 items-center">
-                <SiCss3 className="text-emerald-700 text-lg" />
+                <SiCss3 className="text-emerald-700 text-lg dark:text-emerald-500" />
                 <p className="mx-2 text-lg font-medium">CSS</p>
               </div>
             </Animation>
@@ -60,7 +60,7 @@ const Skills = () => {
           <div className="my-4">
             <Animation props="animate-[transform_2.3s]">
               <div className="flex my-2 items-center">
-                <IoLogoJavascript className="text-emerald-700 text-lg" />
+                <IoLogoJavascript className="text-emerald-700 text-lg dark:text-emerald-500" />
                 <p className="mx-2 text-lg font-medium">Javascript</p>
               </div>
             </Animation>
@@ -74,7 +74,7 @@ const Skills = () => {
           <div className="my-4">
             <Animation props="animate-[transform_2.7s]">
               <div className="flex my-2 items-center">
-                <FaReact className="text-emerald-700 text-lg" />
+                <FaReact className="text-emerald-700 text-lg dark:text-emerald-500" />
                 <p className="mx-2 text-lg font-medium">React</p>
               </div>
             </Animation>
@@ -88,7 +88,7 @@ const Skills = () => {
           <div className="my-4">
             <Animation props="animate-[transform_3s]">
               <div className="flex my-2 items-center">
-                <SiMui className="text-emerald-700 text-lg" />
+                <SiMui className="text-emerald-700 text-lg dark:text-emerald-500" />
                 <p className="mx-2 text-lg font-medium">Material UI</p>
               </div>
             </Animation>
