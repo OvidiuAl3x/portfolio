@@ -30,7 +30,15 @@ export const ImageSlider = ({ slide }) => {
 
   return (
     <>
-      <div className="w-full h-[300px] mt-2 mx-auto">
+      <div className="md:ml-[10%] mt-2">
+        {slide[currentIndex].title ? (
+          <span className="backdrop-blur-md bg-black/100 rounded-full px-2 py-1 text-emerald-300">
+            {slide[currentIndex].title}
+          </span>
+        ) : null}
+      </div>
+
+      <div className="md:w-[80%]  h-[200px] md:h-[300px] mt-2 mx-auto">
         <div className="h-full relative">
           <AiOutlineArrowLeft
             className={style.leftArrow}
@@ -40,16 +48,11 @@ export const ImageSlider = ({ slide }) => {
             className={style.rightArrow}
             onClick={goToNext}
           />
+
           <div
             style={{ backgroundImage: `url(${slide[currentIndex].img})` }}
             className="w-full h-full rounded-xl bg-[length:100%_100%] bg-no-repeat duration-300"
-          >
-            {slide[currentIndex].title ? (
-              <span className="relative md:left-[40px]  top-3 backdrop-blur-md bg-black/100 rounded-full px-2 py-1 text-emerald-300">
-                {slide[currentIndex].title}
-              </span>
-            ) : null}
-          </div>
+          ></div>
         </div>
       </div>
       <div className="flex justify-center">

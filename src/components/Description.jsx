@@ -12,7 +12,7 @@ const Description = ({ props, button, LgUsed, slide }) => {
       closeOnDocumentClick
     >
       {(close) => (
-        <div className="bg-emerald-500 p-3 rounded-lg animate-opacity m-2 ">
+        <div className="bg-emerald-500 p-3 rounded-lg animate-opacity m-2 md:w-[50em]">
           <AiOutlineClose
             className="text-2xl cursor-pointer ml-auto hover:scale-125 bg-black text-emerald-300 rounded-full"
             onClick={close}
@@ -25,6 +25,7 @@ const Description = ({ props, button, LgUsed, slide }) => {
             <strong>Languages Used: </strong>
             {LgUsed}
           </p>
+
           {slide ? <ImageSlider slide={slide} /> : null}
         </div>
       )}

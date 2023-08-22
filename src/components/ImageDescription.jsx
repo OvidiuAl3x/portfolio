@@ -33,12 +33,13 @@ import Digital3 from "../assets/project_img/DigitalNationProject/P3.png";
 import Digital4 from "../assets/project_img/DigitalNationProject/P4.png";
 import Digital5 from "../assets/project_img/DigitalNationProject/P5.png";
 
-import Azimut1 from "../assets/project_img/proiectazimut/home.png";
-import Azimut2 from "../assets/project_img/proiectazimut/pagina_caini.png";
-import Azimut3 from "../assets/project_img/proiectazimut/pagina_pasari.png";
-import Azimut4 from "../assets/project_img/proiectazimut/pagina_rozatoare.png";
-import Azimut6 from "../assets/project_img/proiectazimut/s1.png";
-import Azimut7 from "../assets/project_img/proiectazimut/s2.png";
+import Blog0 from "../assets/project_img/blogAnimals/0.png";
+import Blog1 from "../assets/project_img/blogAnimals/1.png";
+import Blog2 from "../assets/project_img/blogAnimals/2.png";
+import Blog3 from "../assets/project_img/blogAnimals/3.png";
+import Blog4 from "../assets/project_img/blogAnimals/4.png";
+import Blog5 from "../assets/project_img/blogAnimals/5.png";
+import Blog6 from "../assets/project_img/blogAnimals/6.png";
 
 export const ImageDescription = [
   {
@@ -144,21 +145,22 @@ export const ImageDescription = [
   {
     project1: blog,
     title: "Blog About Animals",
-    LgUsed: "HTML, CSS, JavaScript",
+    LgUsed: "HTML, SCSS, JavaScript",
     linkMore: [
-      "• Developed a blog site about animals, more precisely about food, toys, beds. etc...",
+      "• Developed a blog site about animals.",
       <br />,
-      "•  After reading you can test your knowledge by giving a test (dogs, cats or birds)",
+      "•  Add Side Navbar",
       <br />,
-      "• Successfully implemented a dark mode theme on the website, reducing eye strain for users.",
+      "• Add animation on scroll",
     ],
     slide: [
-      { img: `${Azimut1}`, title: "Home Page" },
-      { img: `${Azimut2}`, title: "Dog Page" },
-      { img: `${Azimut3}`, title: "Bird Page" },
-      { img: `${Azimut4}`, title: "Page in Work" },
-      { img: `${Azimut6}`, title: "Select Quizz Page" },
-      { img: `${Azimut7}`, title: "Quizz Page" },
+      { img: `${Blog0}`, title: "Home" },
+      { img: `${Blog1}`, title: "About" },
+      { img: `${Blog2}`, title: "Evolutionary Origins" },
+      { img: `${Blog3}`, title: "Breeds" },
+      { img: `${Blog4}`, title: "Moderns animals" },
+      { img: `${Blog5}`, title: "Living With animals" },
+      { img: `${Blog6}`, title: "Side NavBar" },
     ],
   },
   {
