@@ -162,6 +162,7 @@ export const ImageDescription = [
       { img: `${Blog5}`, title: "Living With animals" },
       { img: `${Blog6}`, title: "Side NavBar" },
     ],
+    linkGit: "https://github.com/OvidiuAl3x/tips-about-animals.git",
   },
   {
     project1: Quizz,
