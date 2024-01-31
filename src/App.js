@@ -1,10 +1,10 @@
-import Contact from "./components/Contact";
+import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
-import Home from "./components/Home";
+import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Resume from "./components/Resume";
-import Skills from "./components/Skills";
-import Works from "./components/Works";
+import Skills from "./pages/Skills";
+import Works from "./pages/Works";
 
 function App() {
   return (

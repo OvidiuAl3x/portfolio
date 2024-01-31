@@ -2,7 +2,7 @@ import React from "react";
 import { MdEmail } from "react-icons/md";
 import { FaLinkedinIn } from "@react-icons/all-files/fa/FaLinkedinIn";
 import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
-import Animation from "./Animation";
+import Animation from "../components/Animation";
 
 const Contact = () => {
   return (

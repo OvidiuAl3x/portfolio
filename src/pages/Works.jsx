@@ -1,8 +1,8 @@
 import React from "react";
 import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
-import Description from "./Description";
-import { ImageDescription } from "./ImageDescription";
-import Animation from "./Animation";
+import Description from "../components/Description";
+import { ImageDescription } from "../components/ImageDescription";
+import Animation from "../components/Animation";
 
 const style = {
   imgStyle:
@@ -27,8 +27,8 @@ const Works = () => {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-16 m-5">
         {ImageDescription.map((image, index) => (
-          <Animation props="animate-[scaleOp_2s]">
-            <div key={index}>
+          <Animation props="animate-[scaleOp_2s]" key={index}>
+            <div>
               <div className="relative group  h-full">
                 <img
                   src={image.project1}
