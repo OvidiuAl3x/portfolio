@@ -54,3 +54,7 @@ h1 {
 .dark {
   background-color: #27272a;
 }
+
+.body-no-scroll {
+  overflow: hidden;
+}

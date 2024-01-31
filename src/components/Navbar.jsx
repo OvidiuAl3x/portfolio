@@ -67,31 +67,31 @@ const Navbar = () => {
             : "absolute bg-zinc-200 w-full px-8 animate-opacity md:hidden dark:bg-zinc-800 dark:text-emerald-500"
         }
       >
-        <a href="#home" onClick={handleClick}>
-          <li className={style.navSM}>
+        <li className={style.navSM}>
+          <a href="#home" onClick={handleClick}>
             <p className="animate-transform">Home</p>
-          </li>
-        </a>
-        <a href="#skills" onClick={handleClick}>
-          <li className={style.navSM}>
+          </a>
+        </li>
+        <li className={style.navSM}>
+          <a href="#skills" onClick={handleClick}>
             <p className="animate-[transform_1.5s]">Skills</p>
-          </li>
-        </a>
-        <a href="#works" onClick={handleClick}>
-          <li className={style.navSM}>
+          </a>
+        </li>
+        <li className={style.navSM}>
+          <a href="#works" onClick={handleClick}>
             <p className="animate-[transform_2s]">Works</p>
-          </li>
-        </a>
-        <a href="#resume" onClick={handleClick}>
-          <li className={style.navSM}>
+          </a>
+        </li>
+        <li className={style.navSM}>
+          <a href="#resume" onClick={handleClick}>
             <p className="animate-[transform_2.5s]">Resume</p>
-          </li>
-        </a>
-        <a href="#contact" onClick={handleClick}>
-          <li className={style.navSM}>
+          </a>
+        </li>
+        <li className={style.navSM}>
+          <a href="#contact" onClick={handleClick}>
             <p className="animate-[transform_3s]">Contact</p>
-          </li>
-        </a>
+          </a>
+        </li>
       </ul>
     </div>
   );

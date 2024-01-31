@@ -1,19 +1,18 @@
 import React, { useEffect, useState } from "react";
-import { AiFillHtml5 } from "@react-icons/all-files/ai/AiFillHtml5";
-import { SiCss3 } from "@react-icons/all-files/si/SiCss3";
-import { FaSass } from "@react-icons/all-files/fa/FaSass";
-import { FaBootstrap } from "@react-icons/all-files/fa/FaBootstrap";
-import { FaReact } from "@react-icons/all-files/fa/FaReact";
 import { FiFigma } from "@react-icons/all-files/fi/FiFigma";
 import { IoLogoJavascript } from "@react-icons/all-files/io/IoLogoJavascript";
-import { SiPhp } from "@react-icons/all-files/si/SiPhp";
-import { SiMui } from "react-icons/si";
 import { BsGit } from "react-icons/bs";
+import {
+  SiTailwindcss,
+  SiPhp,
+  SiCss3,
+  SiMui,
+  SiMongodb,
+  SiExpress,
+} from "react-icons/si";
+import { FaNodeJs, FaSass, FaBootstrap, FaReact } from "react-icons/fa";
+import { AiOutlineLoading3Quarters, AiFillHtml5 } from "react-icons/ai";
 import Animation from "../components/Animation";
-import { SiTailwindcss } from "react-icons/si";
-import { FaNodeJs } from "react-icons/fa";
-import { SiExpress } from "react-icons/si";
-import { SiMongodb } from "react-icons/si";
 
 const style = {
   skills:
@@ -34,7 +33,7 @@ const skillsArray = [
 
 const mainSkillsArray = [
   { name: "React", icon: <FaReact />, width: "82%" },
-  { name: "Tailwind", icon: <SiTailwindcss />, width: "90%" },
+  { name: "Tailwind CSS", icon: <SiTailwindcss />, width: "90%" },
   { name: "Node.Js", icon: <FaNodeJs />, width: "45%" },
   { name: "Express.Js", icon: <SiExpress />, width: "45%" },
   { name: "MongoDB", icon: <SiMongodb />, width: "30%" },
@@ -43,8 +42,23 @@ const mainSkillsArray = [
 const Skills = () => {
   const [visibleSkills, setVisibleSkills] = useState(4);
 
+  const [isLoading, setIsLoading] = useState(false);
+
   const handleShowMore = () => {
-    setVisibleSkills((prev) => prev + 4);
+    const currentPosition = window.scrollY;
+    const newPosition = currentPosition + 1;
+
+    setIsLoading(true);
+
+    setTimeout(() => {
+      setVisibleSkills((prev) => prev + 4);
+
+      setIsLoading(false);
+      window.scrollTo({
+        top: newPosition,
+        behavior: "smooth",
+      });
+    }, 1000);
   };
 
   useEffect(() => {
@@ -73,8 +87,8 @@ const Skills = () => {
       </Animation>
       <hr className="w-full border-emerald-500" />
 
-      <div className="grid lg:grid-cols-2 m-5 items-center">
-        <div className="dark:text-emerald-500 md:w-[60%] md:mx-auto lg:w-full lg:mx-0">
+      <div className="grid xl:grid-cols-2 m-5 items-center">
+        <div className="dark:text-emerald-500 md:w-[60%] md:mx-auto xl:w-full xl:mx-0">
           {mainSkillsArray.map((item, index) => (
             <div className="my-4" key={index}>
               <Animation props="animate-[transform_1.7s]">
@@ -111,12 +125,19 @@ const Skills = () => {
           <div>
             {window.innerWidth <= 1024 &&
               visibleSkills < skillsArray.length && (
-                <button
-                  onClick={handleShowMore}
-                  className="flex items-center justify-center p-3 m-2 bg-emerald-500 text-2l md:text-4l font-semibold rounded-lg hover:shadow-lg hover:shadow-emerald-700/50"
-                >
-                  Show More
-                </button>
+                <Animation props="animate-[scaleOp_2s]">
+                  <button
+                    disabled={isLoading}
+                    onClick={handleShowMore}
+                    className="flex items-center justify-center p-3 m-2 bg-emerald-500 text-2l md:text-4l font-semibold rounded-lg hover:shadow-lg hover:shadow-emerald-700/50"
+                  >
+                    {isLoading ? (
+                      <AiOutlineLoading3Quarters className="animate-spin" />
+                    ) : (
+                      "Show More"
+                    )}
+                  </button>
+                </Animation>
               )}
           </div>
         </div>

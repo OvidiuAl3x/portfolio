@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
 import Description from "../components/Description";
-import { ImageDescription } from "../components/ImageDescription";
 import Animation from "../components/Animation";
+import { projectData } from "../components/ProjectsData";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 const style = {
   imgStyle:
@@ -15,6 +16,45 @@ const style = {
 };
 
 const Works = () => {
+  const [visibleProjects, setVisibleProjects] = useState(3);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleShowMore = () => {
+    const currentPosition = window.scrollY;
+    const newPosition = currentPosition + 1;
+
+    setIsLoading(true);
+
+    setTimeout(() => {
+      setVisibleProjects((prev) => prev + 3);
+
+      setIsLoading(false);
+      window.scrollTo({
+        top: newPosition,
+        behavior: "smooth",
+      });
+    }, 1000);
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth <= 600) {
+        setVisibleProjects(3);
+      } else {
+        setVisibleProjects(6);
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="max-w-[1240px] m-4  lg:mx-auto ">
       <span className="relative top-[-8em]" id="works"></span>
@@ -26,29 +66,31 @@ const Works = () => {
       <hr className="w-full border-emerald-500" />
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-16 m-5">
-        {ImageDescription.map((image, index) => (
+        {projectData.slice(0, visibleProjects).map((item, index) => (
           <Animation props="animate-[scaleOp_2s]" key={index}>
             <div>
               <div className="relative group  h-full">
                 <img
-                  src={image.project1}
+                  src={item.project}
                   className={style.imgStyle}
-                  alt={image.title}
+                  alt={item.title}
                 />
 
                 <div className={style.hoverDiv}>
-                  {image.linkMore ? (
+                  {item.descriptionProject ? (
                     <Description
-                      props={image.linkMore}
-                      button={<button className={style.hoverLink}>More</button>}
-                      LgUsed={image.LgUsed}
-                      slide={image.slide}
+                      button={
+                        <button type="button" className={style.hoverLink}>
+                          More
+                        </button>
+                      }
+                      item={item}
                     />
                   ) : null}
 
-                  {image.linkGit ? (
+                  {item.linkGit ? (
                     <a
-                      href={image.linkGit}
+                      href={item.linkGit}
                       className={style.hoverLink}
                       target="_blank"
                       rel="noreferrer"
@@ -60,10 +102,27 @@ const Works = () => {
                 </div>
               </div>
 
-              <p className={style.text}>{image.title}</p>
+              <p className={style.text}>{item.title}</p>
             </div>
           </Animation>
         ))}
+      </div>
+      <div className="flex justify-center">
+        {visibleProjects < projectData.length && (
+          <Animation props="animate-[scaleOp_2s]">
+            <button
+              disabled={isLoading}
+              onClick={handleShowMore}
+              className="flex items-center justify-center p-3 m-2 bg-emerald-500 text-2l md:text-4l font-semibold rounded-lg hover:shadow-lg hover:shadow-emerald-700/50"
+            >
+              {isLoading ? (
+                <AiOutlineLoading3Quarters className="animate-spin" />
+              ) : (
+                "Show More"
+              )}
+            </button>
+          </Animation>
+        )}
       </div>
     </div>
   );
