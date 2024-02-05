@@ -17,22 +17,18 @@ const Description = ({ button, item }) => {
   };
 
   useEffect(() => {
-    // Add a class to the body when the popup is open
-    document.body.style.overflow = "auto"; // Default value
+    document.body.style.overflow = "auto";
 
     return () => {
-      // Remove the class when the component is unmounted
       document.body.style.overflow = "auto";
     };
   }, []);
 
   const handlePopupOpen = () => {
-    // Add a class to the body when the popup is open
     document.body.style.overflow = "hidden";
   };
 
   const handlePopupClose = () => {
-    // Remove the class when the popup is closed
     document.body.style.overflow = "auto";
   };
 

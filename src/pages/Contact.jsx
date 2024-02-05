@@ -20,7 +20,7 @@ const Contact = () => {
           <h1 className="text-emerald-700 font-bold md:text-xl mt-10 mb-3 dark:text-emerald-500">
             Have You Any Questions ?
           </h1>
-          <p className="text-zinc-400 text-sm md:text-md dark:text-zinc-300">
+          <p className="text-zinc-400 text-sm md:text-base dark:text-zinc-300">
             I'AM AT YOUR SERVICES
           </p>
         </div>

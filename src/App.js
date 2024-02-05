@@ -2,7 +2,7 @@ import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
-import Resume from "./components/Resume";
+import Resume from "./pages/Resume";
 import Skills from "./pages/Skills";
 import Works from "./pages/Works";
 
