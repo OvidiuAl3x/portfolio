@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.401468f3.css",
-    "main.js": "/portfolio/static/js/main.7b939132.js",
+    "main.js": "/portfolio/static/js/main.028de46a.js",
     "static/media/0.png": "/portfolio/static/media/0.f2c7d00aaa0d8e620418.png",
     "static/media/animalsBlog.png": "/portfolio/static/media/animalsBlog.f2c7d00aaa0d8e620418.png",
     "static/media/1.png": "/portfolio/static/media/1.c9e55fc112e252c32485.png",
@@ -24,7 +24,7 @@
     "static/media/P5.png": "/portfolio/static/media/P5.89707cf2df787616be9b.png",
     "static/media/books_table.png": "/portfolio/static/media/books_table.f579a4bf742a50bc1ad9.png",
     "static/media/1.jpg": "/portfolio/static/media/1.cfb88b4a645d60fa2222.jpg",
-    "static/media/CV.pdf": "/portfolio/static/media/CV.5b68feabded789bce7a1.pdf",
+    "static/media/CV.pdf": "/portfolio/static/media/CV.dcff47c7a89057889bf5.pdf",
     "static/media/home_filters.png": "/portfolio/static/media/home_filters.66aa15ab376f4c2e5bcb.png",
     "static/media/6.png": "/portfolio/static/media/6.733a7604f0cb592c3b9a.png",
     "static/media/quiz.png": "/portfolio/static/media/quiz.bbe03acfbc31f51adb49.png",
@@ -41,10 +41,10 @@
     "static/media/slick.woff": "/portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/portfolio/index.html",
     "main.401468f3.css.map": "/portfolio/static/css/main.401468f3.css.map",
-    "main.7b939132.js.map": "/portfolio/static/js/main.7b939132.js.map"
+    "main.028de46a.js.map": "/portfolio/static/js/main.028de46a.js.map"
   },
   "entrypoints": [
     "static/css/main.401468f3.css",
-    "static/js/main.7b939132.js"
+    "static/js/main.028de46a.js"
   ]
 }
