@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.401468f3.css",
-    "main.js": "/portfolio/static/js/main.028de46a.js",
+    "main.css": "/portfolio/static/css/main.8e80b2dc.css",
+    "main.js": "/portfolio/static/js/main.f28caeca.js",
     "static/media/0.png": "/portfolio/static/media/0.f2c7d00aaa0d8e620418.png",
     "static/media/animalsBlog.png": "/portfolio/static/media/animalsBlog.f2c7d00aaa0d8e620418.png",
     "static/media/1.png": "/portfolio/static/media/1.c9e55fc112e252c32485.png",
@@ -12,21 +12,25 @@
     "static/media/4.png": "/portfolio/static/media/4.342cbf7764af1b25b7da.png",
     "static/media/recipeApp.png": "/portfolio/static/media/recipeApp.0e596a1a851e7fe99bcb.png",
     "static/media/3.png": "/portfolio/static/media/3.200301db3c4a8cf10d7d.png",
-    "static/media/page-items-in-cart.png": "/portfolio/static/media/page-items-in-cart.a1df43c5a32ec46f4c6b.png",
     "static/media/myBooks_footer.png": "/portfolio/static/media/myBooks_footer.5e76cd8646efd9d3d01b.png",
     "static/media/create_book.png": "/portfolio/static/media/create_book.6beff4db570164641dbb.png",
-    "static/media/cart.png": "/portfolio/static/media/cart.ab9246705a8f44d399f5.png",
-    "static/media/home_page.png": "/portfolio/static/media/home_page.88ac53906047a6f136a6.png",
     "static/media/P2.png": "/portfolio/static/media/P2.b2e8c000a5f11dcca25d.png",
     "static/media/5.png": "/portfolio/static/media/5.ea19f1b389baca53fffe.png",
     "static/media/book_details.png": "/portfolio/static/media/book_details.6e3a1d8674cdd1a946d0.png",
     "static/media/P4.png": "/portfolio/static/media/P4.f2a28991d2339c31329e.png",
+    "static/media/home_2.jpeg": "/portfolio/static/media/home_2.adf8647f9da5470a2473.jpeg",
     "static/media/P5.png": "/portfolio/static/media/P5.89707cf2df787616be9b.png",
+    "static/media/e-commerce.jpeg": "/portfolio/static/media/e-commerce.d877b872132c15b6c1d6.jpeg",
+    "static/media/home.jpeg": "/portfolio/static/media/home.d877b872132c15b6c1d6.jpeg",
     "static/media/books_table.png": "/portfolio/static/media/books_table.f579a4bf742a50bc1ad9.png",
+    "static/media/men_clothes.jpeg": "/portfolio/static/media/men_clothes.143ca966f440715a7a81.jpeg",
     "static/media/1.jpg": "/portfolio/static/media/1.cfb88b4a645d60fa2222.jpg",
+    "static/media/men_section.jpeg": "/portfolio/static/media/men_section.094c67987639ce454be7.jpeg",
     "static/media/CV.pdf": "/portfolio/static/media/CV.dcff47c7a89057889bf5.pdf",
     "static/media/home_filters.png": "/portfolio/static/media/home_filters.66aa15ab376f4c2e5bcb.png",
     "static/media/6.png": "/portfolio/static/media/6.733a7604f0cb592c3b9a.png",
+    "static/media/cart.jpeg": "/portfolio/static/media/cart.c8d8dae2981eba3ca761.jpeg",
+    "static/media/wishlist.jpeg": "/portfolio/static/media/wishlist.6e14f915685e919b7cb4.jpeg",
     "static/media/quiz.png": "/portfolio/static/media/quiz.bbe03acfbc31f51adb49.png",
     "static/media/P3.png": "/portfolio/static/media/P3.ef7d1fc53cdbf7c76656.png",
     "static/media/add_review.png": "/portfolio/static/media/add_review.20339dc682b679e679da.png",
@@ -40,11 +44,11 @@
     "static/media/slick.ttf": "/portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/portfolio/index.html",
-    "main.401468f3.css.map": "/portfolio/static/css/main.401468f3.css.map",
-    "main.028de46a.js.map": "/portfolio/static/js/main.028de46a.js.map"
+    "main.8e80b2dc.css.map": "/portfolio/static/css/main.8e80b2dc.css.map",
+    "main.f28caeca.js.map": "/portfolio/static/js/main.f28caeca.js.map"
   },
   "entrypoints": [
-    "static/css/main.401468f3.css",
-    "static/js/main.028de46a.js"
+    "static/css/main.8e80b2dc.css",
+    "static/js/main.f28caeca.js"
   ]
 }
