@@ -2,7 +2,7 @@ import blog from "../assets/portofolio/animalsBlog.png";
 import Movies_App from "../assets/portofolio/moviePHP.png";
 import Recipe_App from "../assets/portofolio/recipeApp.png";
 import Book_App from "../assets/portofolio/bookReact.png";
-import Shopping_Cart from "../assets/portofolio/cart.png";
+import ECommerce from "../assets/portofolio/e-commerce.jpeg";
 import Quizz from "../assets/portofolio/quiz.png";
 import Quotes from "../assets/portofolio/quotes.png";
 import to_do from "../assets/portofolio/to_do.png";
@@ -17,9 +17,12 @@ import B7 from "../assets/project_img/Books/create_book.png";
 import B8 from "../assets/project_img/Books/book_details.png";
 import B9 from "../assets/project_img/Books/add_review.png";
 
-import Cart1 from "../assets/project_img/shopping cart/home_page.png";
-import Cart2 from "../assets/project_img/shopping cart/cart.png";
-import Cart3 from "../assets/project_img/shopping cart/page-items-in-cart.png";
+import Cart1 from "../assets/project_img/e-commerce/home.jpeg";
+import Cart2 from "../assets/project_img/e-commerce/home_2.jpeg";
+import Cart3 from "../assets/project_img/e-commerce/men_section.jpeg";
+import Cart4 from "../assets/project_img/e-commerce/men_clothes.jpeg";
+import Cart5 from "../assets/project_img/e-commerce/wishlist.jpeg";
+import Cart6 from "../assets/project_img/e-commerce/cart.jpeg";
 
 import Endava1 from "../assets/project_img/Endava/1.png";
 import Endava2 from "../assets/project_img/Endava/2.png";
@@ -104,25 +107,28 @@ export const projectData = [
     ],
   },
   {
-    project: Shopping_Cart,
-    title: "Shopping Cart",
+    project: ECommerce,
+    title: "E-Commerce",
     linkGit: "https://github.com/OvidiuAl3x/shopping-cart",
-    languageUsed: "HTML, CSS, Material UI, JavaScript, React",
+    languageUsed: "Tailwind, React, JSON-Server, Redux",
     descriptionProject: [
-      "• Created a shopping cart in React that utilized json data",
+      "• React E-Commerce Platform with Tailwind, React Icons, Redux, and React Router",
       <br />,
-      "• Added 'add to cart' functionality",
+      "• This dynamic web application is crafted with precision using React, backed by a JSON server for efficient data management. The use of Tailwind ensures a visually stunning and responsive design that adapts flawlessly to various devices, providing a user-friendly interface.",
       <br />,
-      "• Users are allowed in cart to delete products from cart or add more product quantity and see total cost",
+      "• To enhance the user interface, React Icons have been seamlessly integrated, offering a visually appealing and consistent iconography throughout the application. Navigation is made smooth and intuitive with the incorporation of React Router, allowing users to effortlessly explore different sections of the platform",
       <br />,
-      "•  After adding a product to the cart, the customer can see how many products are in the cart",
+      "•  The power of state management is harnessed through React Redux, ensuring a smooth flow of data and an efficient user experience. As users explore the platform, they can add desired items to their cart or wishlist, creating a personalized shopping journey tailored to their preferences.",
       <br />,
       "• Utilized Material UI to create an intuitive interface for website users",
     ],
     slide: [
       { img: `${Cart1}`, title: "Home Page" },
-      { img: `${Cart2}`, title: "Mini Cart on hover" },
-      { img: `${Cart3}`, title: "Cart Page" },
+      { img: `${Cart2}`, title: "Home Page 2" },
+      { img: `${Cart3}`, title: "Men Categories" },
+      { img: `${Cart4}`, title: "Men Clothes" },
+      { img: `${Cart5}`, title: "Whislist" },
+      { img: `${Cart6}`, title: "Cart Page" },
     ],
   },
   {

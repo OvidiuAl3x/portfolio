@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Popup from "reactjs-popup";
 import { AiOutlineClose } from "react-icons/ai";
 import Slider from "react-slick";
@@ -8,12 +8,44 @@ import "slick-carousel/slick/slick-theme.css";
 const Description = ({ button, item }) => {
   const { languageUsed, descriptionProject, slide } = item;
 
+  const [maxHeight, setMaxHeight] = useState(0);
+  const sliderRef = useRef(null);
+
+  useEffect(() => {
+    const updateMaxHeight = () => {
+      const sliderInnerContainer = sliderRef.current?.innerSlider?.list;
+
+      if (sliderInnerContainer) {
+        const slides = Array.from(sliderInnerContainer.children);
+
+        const maxHeight = slides.reduce((max, slide) => {
+          const slideHeight = slide.offsetHeight;
+          return slideHeight > max ? slideHeight : max;
+        }, 0);
+
+        setMaxHeight(maxHeight);
+      }
+    };
+
+    updateMaxHeight();
+    window.addEventListener("resize", updateMaxHeight);
+
+    return () => {
+      window.removeEventListener("resize", updateMaxHeight);
+    };
+  }, []);
+
   const sliderSettings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    adaptiveHeight: true,
+  };
+
+  const slideStyle = {
+    height: `${maxHeight}px`,
   };
 
   useEffect(() => {
@@ -49,9 +81,9 @@ const Description = ({ button, item }) => {
           />
           {slide && (
             <div className="p-4 py-6 w-[23em] md:w-[40em] lg:w-auto">
-              <Slider {...sliderSettings}>
+              <Slider {...sliderSettings} ref={sliderRef}>
                 {slide.map((slideItem, index) => (
-                  <div key={index}>
+                  <div key={index} style={slideStyle}>
                     <p className="backdrop-blur-md bg-black/100 rounded-full px-2 py-1 text-emerald-300 w-fit my-2">
                       {slideItem.title}
                     </p>

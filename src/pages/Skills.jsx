@@ -9,6 +9,7 @@ import {
   SiMui,
   SiMongodb,
   SiExpress,
+  SiRedux,
 } from "react-icons/si";
 import { FaNodeJs, FaSass, FaBootstrap, FaReact } from "react-icons/fa";
 import { AiOutlineLoading3Quarters, AiFillHtml5 } from "react-icons/ai";
@@ -16,17 +17,18 @@ import Animation from "../components/Animation";
 
 const style = {
   skills:
-    "bg-emerald-500 m-3 rounded-lg flex flex-col items-center p-5 w-36 justify-center",
+    "bg-emerald-500 rounded-lg flex flex-col items-center p-5 min-w-32 justify-center",
 };
 
 const skillsArray = [
-  { name: "HTML", icon: <AiFillHtml5 /> },
-  { name: "CSS", icon: <SiCss3 /> },
-  { name: "SCSS", icon: <FaSass /> },
-  { name: "Bootstrap", icon: <FaBootstrap /> },
   { name: "Javascript", icon: <IoLogoJavascript /> },
+  { name: "Redux", icon: <SiRedux /> },
   { name: "Material UI", icon: <SiMui /> },
   { name: "Git", icon: <BsGit /> },
+  { name: "SCSS", icon: <FaSass /> },
+  { name: "HTML", icon: <AiFillHtml5 /> },
+  { name: "CSS", icon: <SiCss3 /> },
+  { name: "Bootstrap", icon: <FaBootstrap /> },
   { name: "Figma", icon: <FiFigma /> },
   { name: "PHP", icon: <SiPhp /> },
 ];
@@ -111,8 +113,8 @@ const Skills = () => {
           ))}
         </div>
 
-        <div className="flex flex-col items-center md:w-[80%] md:mx-auto lg:w-full lg:mx-0">
-          <div className="flex flex-wrap font-semibold lg:ml-5 justify-center">
+        <div className="flex flex-col items-center sm:w-[80%] mx-auto xl:w-full ">
+          <div className="flex flex-wrap font-semibold lg:ml-5 justify-center gap-2">
             {skillsArray.slice(0, visibleSkills).map((item, index) => (
               <Animation props="animate-[scaleOp_2s]" key={index}>
                 <div className={style.skills}>
