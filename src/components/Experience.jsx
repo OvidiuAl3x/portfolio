@@ -6,12 +6,14 @@ const experience = [
     role: "Frontend Developer",
     company: "Asociatia Oportunitati si Cariere",
     date: "Sep 2023 - Present",
-    skiilsUsed: "Html, Css, JavaScript, React, Tailwind",
+    skiilsUsed: "Html, Css, JavaScript, React, Tailwind, Next.JS",
+    projects: "City Search Application, Scraper-UI",
     skillsAcquired: [
-      "My work involved redesigning and enhancing the web scrapers that my colleagues had developed, making them responsive and adding new features. This improved the manual testing process for the testers, who could perform their tasks more efficiently.",
-      "We developed a feature that allows users to search for cities using an endpoint from the backend. This endpoint connects to a database that contains information about various villages, cities and counties from Romania",
-      "We helped new staff members who joined our project team to get familiar with the project goals, tasks, and tools",
-      "We have resolved the bugs that the test team identified and documented in the GitHub repo.",
+      "Enhanced understanding of JavaScript ES6 features, including Promises, async/await, template literals, let/const, and arrow functions",
+      "Experience in building responsive and user-friendly interfaces to improve usability and enhance user experience",
+      "Skill development in identifying and resolving bugs to ensure smooth functionality and optimal performance",
+      "Strengthened documentation skills, including the creation of comprehensive guidelines for project usage, maintenance, and troubleshooting",
+      "Improved collaboration and communication skills through working with colleagues and providing technical support and guidance",
     ],
   },
   {
@@ -83,6 +85,12 @@ function Experience() {
               <strong>Skills used: </strong>
               {item.skiilsUsed}
             </p>
+            {item.projects && (
+              <p className="text-sm">
+                <strong>Projects: </strong>
+                {item.projects}
+              </p>
+            )}
 
             <ul className="list-disc mt-2 marker:text-emerald-700 text-sm dark:marker:text-emerald-500">
               <p>Skills acquired:</p>

@@ -77,6 +77,17 @@ const Works = () => {
                 />
 
                 <div className={style.hoverDiv}>
+                  {item.linkSite ? (
+                    <a
+                      href={item.linkSite}
+                      className={style.hoverLink}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Site
+                    </a>
+                  ) : null}
+
                   {item.descriptionProject ? (
                     <Description
                       button={

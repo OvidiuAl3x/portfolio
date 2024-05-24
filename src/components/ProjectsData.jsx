@@ -7,6 +7,8 @@ import Quizz from "../assets/portofolio/quiz.png";
 import Quotes from "../assets/portofolio/quotes.png";
 import to_do from "../assets/portofolio/to_do.png";
 import Weather from "../assets/portofolio/weather.png";
+import ui_orase from "../assets/portofolio/ui-orase.jpeg";
+import scraper_ui from "../assets/portofolio/scraper-ui.jpeg";
 
 import B1 from "../assets/project_img/Books/home.png";
 import B2 from "../assets/project_img/Books/login.png";
@@ -44,7 +46,51 @@ import Blog4 from "../assets/project_img/blogAnimals/4.png";
 import Blog5 from "../assets/project_img/blogAnimals/5.png";
 import Blog6 from "../assets/project_img/blogAnimals/6.png";
 
+import ui_orase1 from "../assets/project_img/ui-orase/ui-orase.jpeg";
+import ui_orase2 from "../assets/project_img/ui-orase/Screenshot_24-5-2024_114336_peviitor-ro.github.io.jpeg";
+
+import scraper_ui1 from "../assets/project_img/scraper-ui/scraper_ui1.jpeg";
+import scraper_ui2 from "../assets/project_img/scraper-ui/scraper_ui2.jpeg";
+
 export const projectData = [
+  {
+    project: ui_orase,
+    title: "City Search Application",
+    languageUsed:
+      " Html, CSS, Vanilla JavaScript, ES6 features (Promises, async/await, template literals, let/const, arrow functions, etc.)",
+    descriptionProject: [
+      "• Created a search functionality for city data using vanilla JavaScript.",
+      <br />,
+      "• Fetched and processed data from APIs using async/await and Promises.",
+      <br />,
+      "• Rendered search results dynamically using template literals and DOM manipulation.",
+      <br />,
+      "• Validated user input with regular expressions and provided real-time feedback.",
+      "• Streamlined Database Testing Process: Developed a user-friendly interface to facilitate database testing procedures, empowering testers to efficiently verify the completeness of the database by providing easy access to search for and validate the presence of all cities.",
+      "• Identified and resolved bugs identified by the test team, ensuring smooth functionality and a seamless user experience.",
+      "• Authored comprehensive documentation for the project, providing clear guidelines for usage, maintenance, and troubleshooting.",
+    ],
+    slide: [{ img: `${ui_orase1}` }, { img: `${ui_orase2}` }],
+    linkGit: "https://github.com/peviitor-ro/ui.orase",
+    linkSite: "https://peviitor-ro.github.io/ui.orase/",
+  },
+  {
+    project: scraper_ui,
+    title: "Scraper-UI",
+    languageUsed: " Html, CSS, Vanilla JavaScript",
+    descriptionProject: [
+      "• Redesigned and enhanced web scrapers developed by colleagues to improve responsiveness and introduce new features.",
+      <br />,
+      "• Enhanced manual testing process for testers, enabling more efficient task execution.",
+      <br />,
+      "• Identified and resolved bugs in existing scrapers to ensure smooth functionality and optimal performance.",
+      <br />,
+      "• Developed intuitive user interfaces to streamline the scraping process and improve user experience.",
+    ],
+    slide: [{ img: `${scraper_ui1}` }, { img: `${scraper_ui2}` }],
+    linkGit: "https://github.com/peviitor-ro/Scrapers-UI",
+    linkSite: "https://scrapers.peviitor.ro/",
+  },
   {
     project: Book_App,
     title: "Book App",
