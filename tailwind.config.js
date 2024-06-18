@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  darkMode: "class",
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
       sm: "640px",
@@ -10,31 +9,11 @@ module.exports = {
       xl: "1280px",
       "2xl": "1536px",
     },
-    extend: {
-      keyframes: {
-        opacity: {
-          "0%": { opacity: "0%" },
-          "100%": { opacity: "100%" },
-        },
-        transform: {
-          "0%": { transform: "translate(-400px,0px)" },
-          "100%": { transform: "translate(0px,0px)" },
-        },
-        navAnim: {
-          "0%": { transform: "translate(0px,-100px)" },
-          "100%": { transform: "translate(0px,0px)" },
-        },
-        scaleOp: {
-          "0%": { scale: "0.5", opacity: "0%" },
-          "100%": { scale: "1", opacity: "100%" },
-        },
-      },
-      animation: {
-        opacity: "opacity 0.5s ease-in-out",
-        transform: "transform 1s",
-        navAnim: "navAnim 1s ease-in-out",
-        scaleOp: "scaleOp 1s ease-in-out",
-      },
+    colors: {
+      backgroundBlack: "#121212",
+      textWhite: "#F5F5F5",
+      grayLight: "#A6A6A6",
+      greyDark: "#3D3D3D",
     },
   },
   plugins: [],
