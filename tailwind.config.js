@@ -13,7 +13,20 @@ export default {
       backgroundBlack: "#121212",
       textWhite: "#F5F5F5",
       grayLight: "#A6A6A6",
-      greyDark: "#3D3D3D",
+      grayDark: "#3D3D3D",
+    },
+    fontFamily: {
+      openSans: ["Open Sans", "sans-serif"],
+      firaCode: ["Fira Code", "monospace"],
+    },
+    keyframes: {
+      opacity: {
+        "0%": { opacity: "0%" },
+        "100%": { opacity: "100%" },
+      },
+    },
+    animation: {
+      opacity: "opacity 1s ease-in-out",
     },
   },
   plugins: [],
