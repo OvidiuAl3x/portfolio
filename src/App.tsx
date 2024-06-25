@@ -1,22 +1,15 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
+import About from "./pages/About";
 import Home from "./pages/Home";
-
-const RoutesProject = () => {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Header />} />
-      </Routes>
-    </Router>
-  );
-};
+import Work from "./pages/Work";
 
 function App() {
   return (
     <div className=" w-[90%] xl:w-[70%] mx-auto">
-      <RoutesProject />
+      <Header />
+      <Home />
+      <About />
+      <Work />
     </div>
   );
 }

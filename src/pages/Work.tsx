@@ -61,8 +61,8 @@ const Work = () => {
 
   return (
     <div className="my-5">
-      <h1 className="text-6xl text-end font-firaCode mt-32 mb-8 border-b border-b-grayLight">
-        Work
+      <h1 className="text-6xl text-end font-firaCode mt-36 mb-8 border-b border-b-grayLight">
+        Work Experience
       </h1>
       <div className="flex flex-wrap font-firaCode  text-xl gap-5">
         {experienceData.map((item, index) => (

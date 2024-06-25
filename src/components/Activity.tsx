@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import image from "../assets/animalsBlog.png";
 import arrowRight from "../assets/icons/right-arrow.png";
 
@@ -34,7 +33,7 @@ const Activity = () => {
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil
               del
             </p>
-            <Link to="/projects" className="flex gap-2 items-center">
+            <a href="#projects" className="flex gap-2 items-center">
               <button className="bg-textWhite text-backgroundBlack rounded-full px-12 py-2 font-openSans italic">
                 Project
               </button>
@@ -43,7 +42,7 @@ const Activity = () => {
                 alt="arrow_right"
                 className="bg-textWhite text-backgroundBlack w-[35px] px-[10px] rounded-full py-[10px] cursor-pointer"
               />
-            </Link>
+            </a>
           </div>
         </div>
       </div>

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
 
 import menu from "../assets/icons/menu.png";
@@ -42,21 +41,19 @@ const Header: React.FC = () => {
 
   return (
     <nav className="flex mt-1 font-fireCode md:mx-5 justify-between py-5 font-firaCode">
-      <Link to="/" className="text-xl">
-        Ovidiu Ciobanu
-      </Link>
+      <h1 className="text-xl">Ovidiu Ciobanu</h1>
 
       {/* Desktop navigation */}
       <div className="hidden md:flex gap-5 items-center justify-center text-grayLight">
         <a href="#about" className="hover:text-textWhite">
           About
         </a>
-        <Link to="/projects" className="hover:text-textWhite">
+        <a href="#projects" className="hover:text-textWhite">
           Projects
-        </Link>
-        <Link to="/" className="hover:text-textWhite">
+        </a>
+        <a href="#contacts" className="hover:text-textWhite">
           Contacts
-        </Link>
+        </a>
       </div>
 
       {/* Mobile menu toggle */}
@@ -82,12 +79,12 @@ const Header: React.FC = () => {
           <a href="#about" onClick={toggleNav} className="animate-opacity">
             About
           </a>
-          <Link to="/projects" onClick={toggleNav} className="animate-opacity">
+          <a href="#projects" onClick={toggleNav} className="animate-opacity">
             Projects
-          </Link>
-          <Link to="/" onClick={toggleNav} className="animate-opacity">
+          </a>
+          <a href="#contacts" onClick={toggleNav} className="animate-opacity">
             Contacts
-          </Link>
+          </a>
         </div>
       )}
     </nav>
