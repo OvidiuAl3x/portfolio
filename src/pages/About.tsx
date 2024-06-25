@@ -2,6 +2,11 @@ import profile from "../assets/profile.png";
 import arrowRight from "../assets/icons/right-arrow.png";
 import github from "../assets/icons/github.png";
 
+const FrontEnd =
+  "Javascript / ES6 / TypeScript / React / Redux Toolkit / NextJs / React Native";
+const Styles = "Tailwind CSS / CSS / SCSS / Bootstrap / Material UI";
+const BackEnd = "Node.JS / Express.Js / MongoDB";
+
 const About = () => {
   return (
     <div id="about">
@@ -20,17 +25,14 @@ const About = () => {
           {/* Frontend section */}
           <div className="flex flex-col max-w-[530px] gap-5 border border-grayLight p-5 rounded-3xl text-grayLight hover:bg-textWhite hover:text-backgroundBlack duration-300 transition-all">
             <h1 className="text-2xl">Front-end</h1>
-            <p>
-              Javascript / ES6 / TypeScript / React / Redux Toolkit / NextJs /
-              React Native
-            </p>
+            <p>{FrontEnd}</p>
           </div>
           {/* Styles Section */}
           <div className="flex gap-5 items-center justify-between">
-            <div className="flex flex-col w-[220px] md:w-[300px] gap-5 border border-grayLight p-5 rounded-3xl text-grayLight hover:bg-textWhite hover:text-backgroundBlack duration-300 transition-all">
+            <div className="flex flex-col w-[220px] md:w-[350px] gap-5 border border-grayLight p-5 rounded-3xl text-grayLight hover:bg-textWhite hover:text-backgroundBlack duration-300 transition-all">
               <h1 className="text-2xl">Styles</h1>
 
-              <p>Tailwind CSS / CSS / SCSS / Bootstrap / Material UI</p>
+              <p>{Styles}</p>
             </div>
             <a
               href="https://github.com/OvidiuAl3x"
@@ -53,7 +55,7 @@ const About = () => {
           <div className="flex flex-col  gap-5 border border-grayLight p-5 rounded-3xl text-grayLight hover:bg-textWhite hover:text-backgroundBlack duration-300 transition-all">
             <h1 className="text-2xl">Back-end</h1>
             <div>
-              <p>Node.JS / Express.Js / MongoDB</p>
+              <p>{BackEnd}</p>
             </div>
           </div>
           {/* Favorite  Section */}

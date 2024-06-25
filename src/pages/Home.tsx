@@ -8,6 +8,7 @@ import github from "../assets/icons/github.png";
 import download from "../assets/icons/download.png";
 import CV from "../assets/Resume-Ovidiu-Alexandru-Ciobanu.pdf";
 import Activity from "../components/Activity";
+import Work from "./Work";
 
 const Home = () => {
   return (
@@ -82,6 +83,7 @@ const Home = () => {
         <Activity />
       </div>
       <About />
+      <Work />
     </>
   );
 };
