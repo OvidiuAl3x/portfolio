@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
 import image from "../assets/animalsBlog.png";
 import arrowRight from "../assets/icons/right-arrow.png";
-import "flowbite";
 
 const Activity = () => {
-  const backgroundImage = `url("${image}")`; // Replace with your image URL
+  const backgroundImage = `url("${image}")`;
   const backgroundStyle = {
     backgroundImage: backgroundImage,
     backgroundSize: "cover",
@@ -22,6 +21,7 @@ const Activity = () => {
           className="md:w-[350px] lg:w-[400px]"
         />
       </div>
+      {/* add real project */}
       <div className="flex flex-col justify-between gap-2">
         <h1 className="text-2xl mt-4">Last Project</h1>
         <div

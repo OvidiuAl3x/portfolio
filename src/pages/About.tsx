@@ -1,4 +1,4 @@
-import profile from "../assets/icons/profile.jpg";
+import profile from "../assets/profile.png";
 import arrowRight from "../assets/icons/right-arrow.png";
 import github from "../assets/icons/github.png";
 
@@ -11,8 +11,8 @@ const About = () => {
           Hello! I'm Ovidiu a
           <span className="text-textWhite italic"> front-end developer</span>.
           <br />
-          More than <span className="text-textWhite italic">1 year.</span>
-          experience
+          More than <span className="text-textWhite italic">1 year</span>{" "}
+          experience.
         </p>
       </div>
       <div className="flex  items-start justify-between flex-wrap gap-5">
@@ -74,11 +74,14 @@ const About = () => {
           </div>
         </div>
         {/* Profile Image */}
-        <img
-          src={profile}
-          alt="profile_pic"
-          className="w-[350px] rounded-3xl h-fit order-1 lg:order-2 mx-auto lg:mx-0"
-        />
+        <div className="w-[350px] h-[400px] order-1 lg:order-2 mx-auto lg:mx-0 relative">
+          <span className="w-[350px] bg-grayDark h-[350px] absolute rounded-full top-12 z-0"></span>
+          <img
+            src={profile}
+            alt="profile_pic"
+            className="z-10 absolute rounded-full"
+          />
+        </div>
       </div>
     </div>
   );
