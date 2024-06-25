@@ -77,7 +77,7 @@ const Work = () => {
                   item.startDate,
                   item.endDate ? item.endDate : undefined
                 )}{" "}
-                month
+                months
               </span>
             </div>
 
