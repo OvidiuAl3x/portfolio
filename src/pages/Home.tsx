@@ -4,7 +4,6 @@ import github from "../assets/icons/github.png";
 import download from "../assets/icons/download.png";
 import CV from "../assets/Resume-Ovidiu-Alexandru-Ciobanu.pdf";
 import Activity from "../components/Activity";
-
 const Home = () => {
   return (
     <div
@@ -15,6 +14,7 @@ const Home = () => {
         <p className="text-5xl md:text-6xl tracking-wider order-1 md:order-1">
           Front-End
         </p>
+
         <a
           href="#projects"
           className="flex gap-2 items-center text-xl md:justify-end order-4 md:order-2"

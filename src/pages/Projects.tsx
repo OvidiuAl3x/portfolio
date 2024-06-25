@@ -33,6 +33,7 @@ const Projects = () => {
           .map((project: ProjectData, index: number) => (
             <ProjectCard
               key={index}
+              index={index}
               title={project.title}
               technologies={project.technologies}
               description={project.description}
@@ -50,7 +51,7 @@ const Projects = () => {
             isLoading ? "animate-bounce cursor-wait" : "cursor-pointer"
           }`}
         >
-          {!isLoading ? ".../Show more Projects..." : "..."}
+          {!isLoading ? ".../Show more Projects..." : ". . ."}
         </button>
       ) : (
         <h1 className="text-lg font-firaCode text-center pt-28 md:mt-0 mb-10">

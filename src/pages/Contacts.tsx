@@ -64,10 +64,10 @@ const Contacts = () => {
           <img src={linkedIn} alt="" className="w-5" />
           <p>LinkedIn</p>
         </a>
-        <p className="flex items-center gap-3 text-grayLight hover:text-textWhite rounded-full border border-grayLight px-5 py-2 italic">
+        <div className="flex items-center gap-3 text-grayLight hover:text-textWhite rounded-full border border-grayLight px-5 py-2 italic">
           <img src={email} alt="" className="w-4" />
           <p>alexandruovidiu1999@gmail.com</p>
-        </p>
+        </div>
       </div>
     </div>
   );

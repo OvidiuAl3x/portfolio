@@ -14,6 +14,7 @@ interface ProjectProps {
   images: string[];
   githubLink: string;
   liveLink?: string;
+  index: number;
 }
 
 const ProjectCard: React.FC<ProjectProps> = ({
@@ -23,10 +24,16 @@ const ProjectCard: React.FC<ProjectProps> = ({
   images,
   githubLink,
   liveLink,
+  index,
 }) => {
+  const isEven = index % 2 === 0;
   return (
     <div id="projects">
-      <div className="flex font-firaCode gap-10 items-center flex-wrap">
+      <div
+        className={`flex font-firaCode gap-10 items-center flex-wrap ${
+          !isEven ? "flex-row-reverse" : "flex-row"
+        }`}
+      >
         <div className="flex order-2 md:order-1 gap-5 flex-col flex-1">
           <h2 className="text-xl">{title}</h2>
           <div className="flex flex-wrap gap-5">
