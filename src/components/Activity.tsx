@@ -1,4 +1,3 @@
-import image from "../assets/animalsBlog.png";
 import arrowRight from "../assets/icons/right-arrow.png";
 import { projectData } from "./ProjectsData";
 
