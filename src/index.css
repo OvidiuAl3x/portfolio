@@ -2,59 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  li {
-    @apply m-4;
-    @apply cursor-pointer;
-  }
-}
-
 * {
+  margin: 0;
+  padding: 0;
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Raleway";
-  letter-spacing: 1.2px;
+  background-color: #121212;
+  color: #f5f5f5;
 }
 
-.popup-overlay {
-  background: rgba(0, 0, 0, 0.5);
-  overflow: auto;
-}
-[data-popup="tooltip"].popup-overlay {
-  background: transparent;
+.scrollbar-chat::-webkit-scrollbar {
+  width: 4px;
 }
 
-.popup-content {
-  max-width: 56em;
-}
-
-h1 {
-  text-wrap: balance;
-}
-
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  border-left: 0.5px solid black;
-}
-
-::-webkit-scrollbar-thumb {
-  border-left: 0.5px solid black;
-  background: #10b981;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #097a55;
-}
-
-.dark {
-  background-color: #27272a;
-}
-
-.body-no-scroll {
-  overflow: hidden;
+.scrollbar-chat::-webkit-scrollbar-thumb {
+  background-color: hsla(232, 79%, 4%, 0.5);
+  cursor: pointer;
 }
