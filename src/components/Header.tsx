@@ -40,7 +40,7 @@ const Header: React.FC = () => {
   }, [navOpen]);
 
   return (
-    <nav className="flex mt-1 font-fireCode md:mx-5 justify-between py-5 font-firaCode animate-transform w-[90%] xl:w-[70%] mx-auto">
+    <nav className="flex mt-1 font-fireCode justify-between py-5 font-firaCode animate-transform w-[90%] xl:w-[70%] mx-auto">
       <h1 className="text-xl">Ovidiu Ciobanu</h1>
 
       {/* Desktop navigation */}
