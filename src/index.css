@@ -8,16 +8,132 @@
   scroll-behavior: smooth;
 }
 
+/* hide scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   background-color: #121212;
   color: #f5f5f5;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
-.scrollbar-chat::-webkit-scrollbar {
-  width: 4px;
+/* Hover Projects Buttons */
+
+.hover-container {
+  position: relative;
 }
 
-.scrollbar-chat::-webkit-scrollbar-thumb {
-  background-color: hsla(232, 79%, 4%, 0.5);
-  cursor: pointer;
+.project-button {
+  position: relative;
+  isolation: isolate;
+}
+
+.project-button::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-color: #a6a6a6;
+  inset: 0;
+  scale: 0 1;
+  border-radius: 99px;
+  transform-origin: right;
+  transition: scale 450ms;
+}
+
+.hover-container:hover .project-button::after {
+  transform-origin: left;
+  scale: 1 1;
+}
+
+.arrow-container {
+  position: relative;
+  isolation: isolate;
+}
+
+.arrow-container::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-color: #a6a6a6;
+  inset: 0;
+  scale: 0 1;
+  border-radius: 99px;
+  transform-origin: right;
+  transition: scale 450ms 450ms;
+}
+
+.hover-container:hover .arrow-container::after {
+  transform-origin: left;
+  scale: 1 1;
+}
+
+/* About containers hover & Projects container hover */
+.aboutHover {
+  position: relative;
+  isolation: isolate;
+}
+
+.aboutHover::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-color: white;
+  inset: 0;
+  scale: 0 1;
+  border-radius: 11px;
+  transform-origin: right;
+  transition: scale 450ms;
+}
+
+.aboutHover:hover::after {
+  transform-origin: left;
+  scale: 1 1;
+}
+
+/* Work containers hover */
+.workHover {
+  position: relative;
+  isolation: isolate;
+}
+
+.workHover::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-color: white;
+  inset: 0;
+  scale: 1 0;
+  border-radius: 10px;
+  transform-origin: right;
+  transition: scale 450ms;
+}
+
+.workHover:hover::after {
+  transform-origin: left;
+  scale: 1 1;
+}
+
+/* Scroll to top button Hover */
+.scrollToTopHover {
+  isolation: isolate;
+}
+
+.scrollToTopHover::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-color: #a6a6a6;
+  inset: 0;
+  scale: 1 0;
+  border-radius: 10px;
+  transform-origin: top;
+  transition: scale 450ms;
+}
+
+.scrollToTopHover:hover::after {
+  transform-origin: bottom;
+  scale: 1 1;
 }

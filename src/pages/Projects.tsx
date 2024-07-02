@@ -24,52 +24,54 @@ const Projects = () => {
     }, 1000);
   };
   return (
-    <div id="projects" className="mb-40">
-      <h1 className="text-lg font-firaCode text-center pt-28 md:mt-0 mb-10">
+    <Animation props="animate-[opacity_2s_ease-in-out] mt-20">
+      <h1 className="text-lg font-firaCode text-center mb-10" id="projects">
         .../Projects...
       </h1>
       <div className="flex flex-col gap-24">
         {projectData
           .slice(0, showProject)
           .map((project: ProjectData, index: number) => (
-            <Animation props="animate-[opacity_2s_ease-in-out]">
-              <ProjectCard
-                key={index}
-                index={index}
-                title={project.title}
-                technologies={project.technologies}
-                description={project.description}
-                images={project.images}
-                githubLink={project.githubLink}
-                liveLink={project.liveLink}
-              />
-            </Animation>
+            <ProjectCard
+              key={index}
+              index={index}
+              title={project.title}
+              technologies={project.technologies}
+              description={project.description}
+              images={project.images}
+              githubLink={project.githubLink}
+              liveLink={project.liveLink}
+            />
           ))}
       </div>
 
       {showProject < projectData.length ? (
-        <button
-          onClick={handleShowMore}
-          className={`text-lg font-firaCode text-center mt-16 mx-auto flex ${
-            isLoading ? "animate-bounce cursor-wait" : "cursor-pointer"
-          }`}
-        >
-          {!isLoading ? ".../Show more Projects..." : ". . ."}
-        </button>
-      ) : (
-        <h1 className="text-lg font-firaCode text-center pt-28 md:mt-0 mb-10">
-          .../More Projects on{" "}
-          <a
-            href="https://github.com/OvidiuAl3x"
-            target="_blank"
-            className="underline"
+        <Animation props="animate-[opacity_2s_ease-in-out]">
+          <button
+            onClick={handleShowMore}
+            className={`text-lg font-firaCode text-center mt-16 mx-auto flex ${
+              isLoading ? "animate-bounce cursor-wait" : "cursor-pointer"
+            }`}
           >
-            Github
-          </a>
-          ...
-        </h1>
+            {!isLoading ? ".../Show more Projects..." : ". . ."}
+          </button>
+        </Animation>
+      ) : (
+        <Animation props="animate-[opacity_2s_ease-in-out]">
+          <h1 className="text-lg font-firaCode text-center pt-28 md:mt-0 mb-10">
+            .../More Projects on{" "}
+            <a
+              href="https://github.com/OvidiuAl3x"
+              target="_blank"
+              className="underline"
+            >
+              Github
+            </a>
+            ...
+          </h1>
+        </Animation>
       )}
-    </div>
+    </Animation>
   );
 };
 

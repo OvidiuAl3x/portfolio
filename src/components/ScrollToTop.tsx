@@ -28,7 +28,7 @@ const ScrollToTop = () => {
       {isVisible && (
         <div className="absolute">
           <button
-            className="w-10 h-10 p-3 md:w-12 md:h-12 md:p-3 bg-textWhite rounded-full fixed right-6 bottom-4 md:right-10 md:bottom-8 cursor-pointer animate-opacity"
+            className="scrollToTopHover w-10 h-10 p-3 md:w-12 md:h-12 md:p-3 bg-textWhite rounded-xl fixed right-6 bottom-4 md:right-10 md:bottom-8 cursor-pointer animate-opacity"
             onClick={handleToTop}
           >
             <img src={arrow} alt="scroll-to-top" className="-rotate-90" />

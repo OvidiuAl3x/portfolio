@@ -9,26 +9,25 @@ const Home = () => {
   return (
     <div
       id="home"
-      className="flex flex-col justify-center items-center md:h-[100vh] gap-5 font-firaCode mt-10 md:mt-0 animate-[opacity_2s_ease-in-out]"
+      className="flex flex-col justify-center items-center md:h-[100vh] gap-5 font-firaCode mt-10 md:mt-0 mb-28 md:mb-0 animate-[opacity_2s_ease-in-out]"
     >
       <div className="grid md:grid-cols-2  xl:w-[80%] gap-5">
         <p className="text-5xl md:text-6xl tracking-wider order-1 md:order-1">
           Front-End
         </p>
-
-        <a
-          href="#projects"
-          className="flex gap-2 items-center text-xl md:justify-end order-4 md:order-2"
-        >
-          <button className="bg-textWhite text-backgroundBlack rounded-full px-16 py-2 font-openSans italic">
-            Projects
-          </button>
-          <img
-            src={arrowRight}
-            alt="arrow_right"
-            className="bg-textWhite text-backgroundBlack w-12 px-3 rounded-full py-3 cursor-pointer"
-          />
-        </a>
+        <div className="order-4 md:order-2">
+          <a
+            href="#projects"
+            className="hover-container flex gap-2 items-center text-xl w-fit md:ml-auto"
+          >
+            <button className="project-button bg-textWhite text-backgroundBlack rounded-full px-16 py-2 font-openSans italic">
+              Projects
+            </button>
+            <div className="arrow-container w-12 px-3 py-3 rounded-full  cursor-pointer bg-textWhite">
+              <img src={arrowRight} alt="arrow_right" />
+            </div>
+          </a>
+        </div>
 
         <p className="w-[350px] font-openSans text-grayLight order-3 md:order-3">
           I have a passion for{" "}
@@ -51,7 +50,7 @@ const Home = () => {
         <a
           href="https://github.com/OvidiuAl3x"
           target="_blank"
-          className="flex items-center gap-3 text-grayLight hover:text-textWhite rounded-full border border-grayLight px-5 py-2 italic"
+          className="flex items-center gap-3 text-grayLight hover:text-textWhite rounded-xl border-2 border-grayLight px-5 py-2 italic"
         >
           <img src={github} alt="" className="w-5" />
           <p>GitHub</p>
@@ -59,7 +58,7 @@ const Home = () => {
         <a
           href="https://www.linkedin.com/in/ovidiu-alexandru-ciobanu/"
           target="_blank"
-          className="flex items-center gap-3 text-grayLight hover:text-textWhite rounded-full border border-grayLight px-5 py-2 italic"
+          className="flex items-center gap-3 text-grayLight hover:text-textWhite rounded-xl border-2 border-grayLight px-5 py-2 italic"
         >
           <img src={linkedIn} alt="" className="w-5" />
           <p>LinkedIn</p>
@@ -69,7 +68,7 @@ const Home = () => {
           target="_blank"
           rel="noreferrer"
           download="CV-OvidiuCiobanu"
-          className="flex items-center gap-3 text-grayLight hover:text-textWhite rounded-full border border-grayLight px-5 py-2 italic"
+          className="flex items-center gap-3 text-grayLight hover:text-textWhite rounded-xl border-2 border-grayLight px-5 py-2 italic"
         >
           <img src={download} alt="" className="w-5" />
           <p>Resume</p>

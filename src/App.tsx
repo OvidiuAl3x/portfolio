@@ -1,6 +1,6 @@
-import Animation from "./components/Animation";
 import Header from "./components/Header";
 import ScrollToTop from "./components/ScrollToTop";
+import CustomScrollbar from "./components/Scrollbar";
 import About from "./pages/About";
 import Contacts from "./pages/Contacts";
 import Home from "./pages/Home";
@@ -9,23 +9,16 @@ import Work from "./pages/Work";
 
 function App() {
   return (
-    <div className="w-[90%] xl:w-[70%] mx-auto">
+    <div className="relative w-[90%] xl:w-[70%] mx-auto">
+      <CustomScrollbar />
+
       <Header />
       <Home />
+      <About />
+      <Work />
+      <Projects />
+      <Contacts />
 
-      <Animation props="animate-opacity">
-        <About />
-      </Animation>
-      <Animation props="animate-opacity">
-        <Work />
-      </Animation>
-      <Animation props="animate-opacity">
-        <Projects />
-      </Animation>
-
-      <Animation props="animate-opacity">
-        <Contacts />
-      </Animation>
       <ScrollToTop />
     </div>
   );

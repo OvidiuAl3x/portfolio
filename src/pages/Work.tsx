@@ -1,3 +1,5 @@
+import Animation from "../components/Animation";
+
 // Define the type for the experience data
 interface ExperienceData {
   period: string;
@@ -60,17 +62,20 @@ const Work = () => {
   const totalExperience = getTotalExperience(experienceData);
 
   return (
-    <div className="my-5 mb-40">
-      <h1 className="text-5xl md:text-6xl text-end font-firaCode mb-8 border-b border-b-grayLight">
-        Work Experience
-      </h1>
+    <Animation props="animate-opacity pt-20">
+      <Animation props="animate-[opacity_2s_ease-in-out]">
+        <h1 className="text-5xl md:text-6xl text-end font-firaCode mb-8 border-b-2 border-b-grayLight">
+          Work Experience
+        </h1>
+      </Animation>
+
       <div className="flex flex-wrap font-firaCode  text-xl gap-5">
         {experienceData.map((item, index) => (
-          <div
+          <Animation
             key={index}
-            className="flex flex-wrap flex-col md:flex-row  gap-5 w-full items-center py-5 rounded-xl border border-grayLight text-textWhite hover:text-backgroundBlack hover:bg-textWhite duration-300 group"
+            props="workHover animate-[opacity_2s_ease-in-out] flex flex-wrap flex-col md:flex-row  gap-5 w-full items-center py-5 rounded-xl border-2 border-grayLight  group"
           >
-            <div className="flex flex-col text-grayLight font-openSans mx-5 text-lg group-hover:text-backgroundBlack ">
+            <div className="flex flex-col text-grayLight font-openSans mx-5 text-lg group-hover:text-backgroundBlack duration-300">
               <p>{item.period}</p>
               <span>
                 {calculateExperience(
@@ -81,14 +86,14 @@ const Work = () => {
               </span>
             </div>
 
-            <div className="flex flex-col gap-5 items-center flex-1 text-center text-balance">
+            <div className="flex flex-col gap-5 items-center flex-1 text-center text-balance text-textWhite group-hover:text-backgroundBlack duration-300">
               <p>{item.company}</p>
               <p>{item.position}</p>
             </div>
-          </div>
+          </Animation>
         ))}
       </div>
-      <div className="text-end mt-8 text-xl font-openSans">
+      <Animation props="animate-[opacity_2s_ease-in-out] text-end mt-8 text-xl font-openSans">
         <p className="text-grayLight">Work experience</p>
 
         <p className="italic text-textWhite">
@@ -96,8 +101,8 @@ const Work = () => {
             ? `${totalExperience.years} years and ${totalExperience.months} months`
             : `${totalExperience.months} months`}
         </p>
-      </div>
-    </div>
+      </Animation>
+    </Animation>
   );
 };
 

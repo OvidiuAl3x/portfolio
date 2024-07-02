@@ -6,6 +6,7 @@ import ExternalButtons from "../components/ExternalButtons";
 
 import github from "../assets/icons/github.png";
 import site from "../assets/icons/site.png";
+import Animation from "./Animation";
 
 interface ProjectProps {
   title: string;
@@ -28,19 +29,19 @@ const ProjectCard: React.FC<ProjectProps> = ({
 }) => {
   const isEven = index % 2 === 0;
   return (
-    <div id="projects">
+    <Animation props="animate-[opacity_2s_ease-in-out]">
       <div
         className={`flex font-firaCode gap-10 items-center flex-wrap ${
           !isEven ? "flex-row-reverse" : "flex-row"
         }`}
       >
-        <div className="flex order-2 md:order-1 gap-5 flex-col flex-1">
+        <div className="flex order-2 lg:order-1 gap-5 flex-col flex-1">
           <h2 className="text-xl">{title}</h2>
           <div className="flex flex-wrap gap-5">
             {technologies.map((tech, index) => (
               <p
                 key={index}
-                className="border border-grayLight px-5 py-2 rounded-full hover:text-backgroundBlack hover:bg-textWhite duration-300"
+                className="aboutHover border-2 border-grayLight px-5 py-2 rounded-xl hover:text-backgroundBlack hover:bg-textWhite duration-300"
               >
                 {tech}
               </p>
@@ -55,7 +56,7 @@ const ProjectCard: React.FC<ProjectProps> = ({
           useKeyboardArrows={true}
           autoPlay={true}
           stopOnHover={true}
-          className="md:w-[50%] relative order-1 md:order-2"
+          className="lg:w-[50%] relative order-1 lg:order-2"
         >
           {images.map((image, index) => (
             <div key={index}>
@@ -65,11 +66,13 @@ const ProjectCard: React.FC<ProjectProps> = ({
           ))}
         </Carousel>
       </div>
-      <div className="flex mt-2">
+      <div
+        className={`${!isEven ? "lg:justify-end" : " justify-start"} flex mt-2`}
+      >
         <ExternalButtons link={githubLink} image={github} />
         {liveLink && <ExternalButtons link={liveLink} image={site} />}
       </div>
-    </div>
+    </Animation>
   );
 };
 
