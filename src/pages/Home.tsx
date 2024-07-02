@@ -4,6 +4,7 @@ import github from "../assets/icons/github.png";
 import download from "../assets/icons/download.png";
 import CV from "../assets/Resume-Ovidiu-Alexandru-Ciobanu.pdf";
 import Activity from "../components/Activity";
+
 const Home = () => {
   return (
     <div

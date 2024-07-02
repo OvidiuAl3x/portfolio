@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import ScrollToTop from "./components/ScrollToTop";
 import About from "./pages/About";
 import Contacts from "./pages/Contacts";
 import Home from "./pages/Home";
@@ -14,6 +15,7 @@ function App() {
       <Work />
       <Projects />
       <Contacts />
+      <ScrollToTop />
     </div>
   );
 }
