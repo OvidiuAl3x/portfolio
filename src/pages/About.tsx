@@ -9,8 +9,8 @@ const BackEnd = "Node.JS / Express.Js / MongoDB";
 
 const About = () => {
   return (
-    <div id="about">
-      <div className="flex flex-col gap-5 md:flex-row  pt-28 md:mt-0 mb-10">
+    <div id="about" className="mb-40">
+      <div className="flex flex-col gap-5 md:flex-row md:mt-0 mb-10">
         <h1 className="text-lg font-firaCode">.../About me...</h1>
         <p className="flex-1 md:text-center text-grayLight font-openSans  text-xl">
           Hello! I'm Ovidiu a

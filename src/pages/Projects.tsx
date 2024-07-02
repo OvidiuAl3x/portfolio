@@ -1,6 +1,7 @@
 import { ProjectData, projectData } from "../components/ProjectsData";
 import ProjectCard from "../components/ProjectsCard";
 import { useState } from "react";
+import Animation from "../components/Animation";
 
 const Projects = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -23,7 +24,7 @@ const Projects = () => {
     }, 1000);
   };
   return (
-    <div id="projects">
+    <div id="projects" className="mb-40">
       <h1 className="text-lg font-firaCode text-center pt-28 md:mt-0 mb-10">
         .../Projects...
       </h1>
@@ -31,16 +32,18 @@ const Projects = () => {
         {projectData
           .slice(0, showProject)
           .map((project: ProjectData, index: number) => (
-            <ProjectCard
-              key={index}
-              index={index}
-              title={project.title}
-              technologies={project.technologies}
-              description={project.description}
-              images={project.images}
-              githubLink={project.githubLink}
-              liveLink={project.liveLink}
-            />
+            <Animation props="animate-[opacity_2s_ease-in-out]">
+              <ProjectCard
+                key={index}
+                index={index}
+                title={project.title}
+                technologies={project.technologies}
+                description={project.description}
+                images={project.images}
+                githubLink={project.githubLink}
+                liveLink={project.liveLink}
+              />
+            </Animation>
           ))}
       </div>
 

@@ -5,7 +5,7 @@ import email from "../assets/icons/email.png";
 const Contacts = () => {
   return (
     <div id="contacts">
-      <div className="flex flex-wrap md:flex-nowrap gap-5 items-center justify-between pt-28 md:mt-0  text-grayLight">
+      <div className="flex flex-wrap md:flex-nowrap gap-5 items-center justify-between  md:mt-0  text-grayLight">
         <div className="flex flex-col text-4xl sm:text-6xl text-textWhite font-firaCode order-2 md:order-1 gap-5">
           <h1>Ovidiu</h1>
           <div className="flex gap-5">

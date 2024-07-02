@@ -60,8 +60,8 @@ const Work = () => {
   const totalExperience = getTotalExperience(experienceData);
 
   return (
-    <div className="my-5">
-      <h1 className="text-5xl md:text-6xl text-end font-firaCode mt-36 mb-8 border-b border-b-grayLight">
+    <div className="my-5 mb-40">
+      <h1 className="text-5xl md:text-6xl text-end font-firaCode mb-8 border-b border-b-grayLight">
         Work Experience
       </h1>
       <div className="flex flex-wrap font-firaCode  text-xl gap-5">

@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div
       id="home"
-      className="flex flex-col justify-center items-center md:h-[100vh] gap-5 font-firaCode mt-10 md:mt-0"
+      className="flex flex-col justify-center items-center md:h-[100vh] gap-5 font-firaCode mt-10 md:mt-0 animate-[opacity_2s_ease-in-out]"
     >
       <div className="grid md:grid-cols-2  xl:w-[80%] gap-5">
         <p className="text-5xl md:text-6xl tracking-wider order-1 md:order-1">

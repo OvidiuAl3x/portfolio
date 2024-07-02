@@ -24,6 +24,10 @@ export default {
         "0%": { opacity: "0%" },
         "100%": { opacity: "100%" },
       },
+      transform: {
+        "0%": { transform: "translate(0px,-200px)" },
+        "100%": { transform: "translate(0px,0px)" },
+      },
       bounce: {
         "0%, 100%": {
           transform: "translateY(-25%)",
@@ -37,6 +41,7 @@ export default {
     },
     animation: {
       opacity: "opacity 1s ease-in-out",
+      transform: "transform 1s ease-in-out",
       bounce: "bounce 1s infinite",
     },
   },
