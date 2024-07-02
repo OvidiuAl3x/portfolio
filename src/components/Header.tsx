@@ -40,7 +40,7 @@ const Header: React.FC = () => {
   }, [navOpen]);
 
   return (
-    <nav className="flex mt-1 font-fireCode md:mx-5 justify-between py-5 font-firaCode animate-transform">
+    <nav className="flex mt-1 font-fireCode md:mx-5 justify-between py-5 font-firaCode animate-transform w-[90%] xl:w-[70%] mx-auto">
       <h1 className="text-xl">Ovidiu Ciobanu</h1>
 
       {/* Desktop navigation */}
@@ -68,7 +68,7 @@ const Header: React.FC = () => {
       {navOpen && (
         <div
           ref={navMenuRef}
-          className="flex flex-col absolute right-0 items-center justify-center text-grayLight bg-grayDark h-full w-full text-xl top-0 gap-5 transition-all duration-500 z-50"
+          className="flex flex-col items-center justify-center absolute top-0 left-0 w-full h-full   bg-grayDark text-grayLight text-xl  gap-5 transition-all duration-500 z-50 "
         >
           <img
             src={close}

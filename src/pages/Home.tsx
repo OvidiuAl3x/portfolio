@@ -29,7 +29,7 @@ const Home = () => {
           </a>
         </div>
 
-        <p className="w-[350px] font-openSans text-grayLight order-3 md:order-3">
+        <p className="sm:w-[350px] font-openSans text-grayLight order-3 md:order-3">
           I have a passion for{" "}
           <span className="italic text-textWhite">web development </span> and{" "}
           <span className="italic text-textWhite">digital technologies.</span>{" "}

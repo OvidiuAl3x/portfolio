@@ -3,10 +3,33 @@ import arrowRight from "../assets/icons/right-arrow.png";
 import github from "../assets/icons/github.png";
 import Animation from "../components/Animation";
 
-const FrontEnd =
-  "Javascript / ES6 / TypeScript / React / Redux Toolkit / NextJs / React Native";
-const Styles = "Tailwind CSS / CSS / SCSS / Bootstrap / Material UI";
-const BackEnd = "Node.JS / Express.Js / MongoDB";
+const FrontEnd = [
+  "Javascript",
+  " / ",
+  "ES6",
+  " / ",
+  "TypeScript",
+  " / ",
+  "React",
+  " / ",
+  "Redux Toolkit",
+  " / ",
+  "NextJs",
+  " / ",
+  "React Native",
+];
+const Styles = [
+  "Tailwind CSS",
+  " / ",
+  "CSS",
+  " / ",
+  "SCSS",
+  " / ",
+  "Bootstrap",
+  " / ",
+  "Material UI",
+];
+const BackEnd = ["Node.JS", " / ", "Express.Js", " / ", "MongoDB"];
 
 const About = () => {
   return (
@@ -26,15 +49,23 @@ const About = () => {
           {/* Frontend section */}
           <Animation props="animate-[opacity_2s_ease-in-out] aboutHover flex flex-col max-w-[530px] gap-5 border-2 border-grayLight p-5 rounded-xl text-grayLight  hover:text-backgroundBlack duration-300 ">
             <h1 className="text-2xl">Front-end</h1>
-            <p>{FrontEnd}</p>
+            <div className="flex flex-wrap gap-1">
+              {FrontEnd.map((item, index) => (
+                <p key={index}>{item}</p>
+              ))}
+            </div>
           </Animation>
 
           {/* Styles Section */}
           <Animation props="animate-[opacity_2s_ease-in-out] flex gap-5 items-center justify-between">
-            <div className="aboutHover flex flex-col w-[220px] md:w-[350px] gap-5 border-2 border-grayLight p-5 rounded-xl text-grayLight hover:text-backgroundBlack duration-300">
+            <div className="aboutHover flex flex-col max-w-[220px] md:max-w-[350px] gap-5 border-2 border-grayLight p-5 rounded-xl text-grayLight hover:text-backgroundBlack duration-300">
               <h1 className="text-2xl">Styles</h1>
 
-              <p>{Styles}</p>
+              <div className="flex flex-wrap gap-1">
+                {Styles.map((item, index) => (
+                  <p key={index}>{item}</p>
+                ))}
+              </div>
             </div>
             <a
               href="https://github.com/OvidiuAl3x"
@@ -54,7 +85,11 @@ const About = () => {
           <Animation props="animate-[opacity_2s_ease-in-out] aboutHover flex flex-col  gap-5 border-2 border-grayLight p-5 rounded-xl text-grayLight hover:text-backgroundBlack duration-300 ">
             <h1 className="text-2xl">Back-end</h1>
             <div>
-              <p>{BackEnd}</p>
+              <div className="flex flex-wrap gap-1">
+                {BackEnd.map((item, index) => (
+                  <p key={index}>{item}</p>
+                ))}
+              </div>
             </div>
           </Animation>
 

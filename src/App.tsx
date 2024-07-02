@@ -9,18 +9,20 @@ import Work from "./pages/Work";
 
 function App() {
   return (
-    <div className="relative w-[90%] xl:w-[70%] mx-auto">
+    <>
       <CustomScrollbar />
-
       <Header />
-      <Home />
-      <About />
-      <Work />
-      <Projects />
-      <Contacts />
 
-      <ScrollToTop />
-    </div>
+      <div className=" w-[90%] xl:w-[70%] mx-auto">
+        <Home />
+        <About />
+        <Work />
+        <Projects />
+        <Contacts />
+
+        <ScrollToTop />
+      </div>
+    </>
   );
 }
 
