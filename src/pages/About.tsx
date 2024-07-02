@@ -16,7 +16,7 @@ const About = () => {
           Hello! I'm Ovidiu a
           <span className="text-textWhite italic"> front-end developer</span>.
           <br />
-          More than <span className="text-textWhite italic">1 year</span>{" "}
+          More than <span className="text-textWhite italic">2 years</span>{" "}
           experience.
         </p>
       </div>
@@ -39,15 +39,11 @@ const About = () => {
               target="_blank"
               className="flex"
             >
-              <div className="rounded-full border border-l-grayLight w-fit p-3">
-                <img src={github} alt="github" className="w-8 h-8" />
+              <div className="rounded-full border border-l-grayLight w-12 h-12 p-2">
+                <img src={github} alt="github" />
               </div>
-              <div className="rounded-full border border-l-grayLight w-fit p-3 bg-textWhite right-4 relative">
-                <img
-                  src={arrowRight}
-                  alt="arrow"
-                  className="w-8 h-8 -rotate-45"
-                />
+              <div className="rounded-full border border-l-grayLight w-12 h-12  p-2 bg-textWhite right-4 relative">
+                <img src={arrowRight} alt="arrow" className="-rotate-45" />
               </div>
             </a>
           </div>
@@ -76,12 +72,12 @@ const About = () => {
           </div>
         </div>
         {/* Profile Image */}
-        <div className="w-[350px] h-[400px] order-1 lg:order-2 mx-auto lg:mx-0 relative">
-          <span className="w-[350px] bg-grayDark h-[350px] absolute rounded-full top-12 z-0"></span>
+        <div className="w-[300px] h-[300px] md:w-[350px] md:h-[400px] order-1 lg:order-2 mx-auto lg:mx-0 relative flex justify-center">
+          <span className="w-[250px] h-[230px] md:w-[350px] md:h-[350px] bg-grayDark  absolute rounded-full top-12 z-0"></span>
           <img
             src={profile}
             alt="profile_pic"
-            className="z-10 absolute rounded-full"
+            className="z-10 absolute rounded-full w-[250px] md:w-fit"
           />
         </div>
       </div>

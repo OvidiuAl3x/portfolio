@@ -33,12 +33,12 @@ const Activity = () => {
             className="md:w-[300px] lg:w-[400px] h-48 rounded-2xl hover:opacity-100 transition-opacity duration-300"
             style={backgroundStyle(item.images[0])}
           >
-            <div className="ml-auto w-[55%] flex flex-col items-center justify-around h-full pl-2 backdrop-blur-2xl rounded-r-[16px]">
+            <div className="ml-auto w-[70%] md:w-[55%] flex flex-col items-center justify-around h-full pl-2 backdrop-blur-2xl rounded-r-[16px]">
               <h1 className="text-xl font-firaCode  text-backgroundBlack text-center">
                 {item.title}
               </h1>
               <a href="#projects" className="flex gap-2 items-center">
-                <button className="bg-textWhite text-backgroundBlack rounded-full px-12 py-2 font-openSans italic">
+                <button className="bg-textWhite text-backgroundBlack rounded-full px-8 md:px-12 py-2 font-openSans italic">
                   Project
                 </button>
                 <img

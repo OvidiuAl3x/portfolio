@@ -68,7 +68,7 @@ const Header: React.FC = () => {
       {navOpen && (
         <div
           ref={navMenuRef}
-          className="flex flex-col absolute right-0 items-center justify-center text-grayLight bg-grayDark h-full w-full text-xl top-0 gap-5 transition-all duration-500"
+          className="flex flex-col absolute right-0 items-center justify-center text-grayLight bg-grayDark h-full w-full text-xl top-0 gap-5 transition-all duration-500 z-50"
         >
           <img
             src={close}
